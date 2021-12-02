@@ -8,4 +8,5 @@ if (isset($_SESSION['LAST_ACTIVITY']) && (time() - $_SESSION['LAST_ACTIVITY'] > 
 } else {
     $_SESSION['LAST_ACTIVITY'] = time();
 }
+
 ?>

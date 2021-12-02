@@ -1,7 +1,8 @@
-body{
-    background-image: url("../images/testV2.jpg");
+body {
+    background-image: url("../images/fond.png");
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size:cover;
 }
+
