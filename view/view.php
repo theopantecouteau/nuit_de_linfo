@@ -90,11 +90,11 @@
                                                     </li>
                                                     <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-2056"><a href="https://sauveteurdudunkerquois.fr/les-stations/" class="elementor-item">Stations</a>
                                                         <ul class="sub-menu elementor-nav-menu--dropdown">
-                                                            <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2068"><a href="https://sauveteurdudunkerquois.fr/dunkerque/" class="elementor-sub-item">Dunkerque</a></li>
-                                                            <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2582"><a href="https://sauveteurdudunkerquois.fr/gravelines/" class="elementor-sub-item">Gravelines</a></li>
-                                                            <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2587"><a href="https://sauveteurdudunkerquois.fr/fort-mardyck/" class="elementor-sub-item">Fort-Mardyck</a></li>
-                                                            <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2596"><a href="https://sauveteurdudunkerquois.fr/malo-les-bains/" class="elementor-sub-item">Malo-les-Bains</a></li>
-                                                            <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2595"><a href="https://sauveteurdudunkerquois.fr/bray-dunes/" class="elementor-sub-item">Bray-Dunes</a></li>
+                                                            <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2068"><a href="index.php?controller=stations&action=dunkerque" class="elementor-sub-item">Dunkerque</a></li>
+                                                            <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2582"><a href="index.php?controller=stations&action=gravelines" class="elementor-sub-item">Gravelines</a></li>
+                                                            <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2587"><a href="index.php?controller=stations&action=fortmardick" class="elementor-sub-item">Fort-Mardyck</a></li>
+                                                            <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2596"><a href="index.php?controller=stations&action=malo" class="elementor-sub-item">Malo-les-Bains</a></li>
+                                                            <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2595"><a href="index.php?controller=stations&action=braydunes" class="elementor-sub-item">Bray-Dunes</a></li>
                                                         </ul>
                                                     </li>
                                                     <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-2072"><a href="https://sauveteurdudunkerquois.fr/services-du-port/" class="elementor-item">Services du port</a>
@@ -313,8 +313,8 @@
 
 <?php
 
-require_once __DIR__ . DIRECTORY_SEPARATOR . ".." . DIRECTORY_SEPARATOR . "lib" . DIRECTORY_SEPARATOR . "File.php";
-$filepath = File::build_path(array("view", static::$object, "$view"));
+require_once __DIR__ . DIRECTORY_SEPARATOR . ".." . DIRECTORY_SEPARATOR . "lib" . DIRECTORY_SEPARATOR . "file.php";
+$filepath = file::build_path(array("view", static::$object, "$view"));
 
 require $filepath;
 

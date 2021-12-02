@@ -1,7 +1,7 @@
 <?php
 
-require_once File::build_path(array("model","Model.php"));
-Class ModelUser {
+require_once File::build_path(array("model","model.php"));
+Class ModelUser extends model {
     private $idUtilisateur;
     private $nomUtilisateur;
     private $prenomUtilisateur;
