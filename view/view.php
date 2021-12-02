@@ -176,5 +176,45 @@
         require $filepath;
         ?>
     </main>
+<footer>
+    <link href="src/css/footer.css" rel="stylesheet">
+    <div id="containerhaut">
+        <div id="banière">
+        </div>
+    </div>
+    <div id="containerbas">
+        <div id="boxliste">
+            <h2>Liens utiles</h2>
+            <div class="sousliste">
+                <a href="https://theuselessweb.com">Qui sommes nous ?</a>
+            </div>
+            <div class="sousliste">
+                <a href="https://theuselessweb.com">Presse </a>
+            </div>
+            <div class="sousliste">
+                <a href="https://theuselessweb.com">Sites amis </a>
+            </div>
+            <div class="sousliste">
+                <a href="https://theuselessweb.com"> Exprimez vous ! </a>
+            </div>
+        </div>
+        <div id="logo">
+
+        </div>
+        <div id="boxliste2">
+            <h2>Nous contacter</h2>
+            <div class="sousliste">
+                <a> Facebook </a>
+            </div>
+            <div class="sousliste">
+                <a>Twiter </a>
+            </div>
+            <div class="sousliste">
+                <a href="mailto:truc@gmail.com"> Mail </a>
+            </div>
+        </div>
+    </div>
+
+</footer>
 </body>
 </html<
