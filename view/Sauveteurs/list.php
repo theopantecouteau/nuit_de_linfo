@@ -15,3 +15,4 @@ $alphabet = array(
         }
         echo "<br>";
     }
+    ?>
