@@ -1,6 +1,15 @@
 header{
     background-color: #6EC1E4;
     width: 100%;
+    margin:0;
+    align-items: center;
+    margin-bottom: 40px;
+    margin-top: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    padding: 10px;
+    justify-content: center;
+
 }
 
 .dropdown{
@@ -12,10 +21,12 @@ header{
 
 .sous{
     display: none;
+    position: absolute;
 }
 
 .soussous{
     display: none;
+    position: absolute;
 }
 
 
@@ -26,4 +37,19 @@ nav > ul li:hover .sous{
 
 .sous :hover .soussous{
     display: block;
+
+}
+
+ul{
+    display: inline-block;
+    align-items: center;
+
+
+}
+
+ul li{
+    display: inline;
+    margin-right: 20px;
+    margin-left: 20px;
+
 }

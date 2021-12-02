@@ -4,12 +4,14 @@
     <meta charset="UTF-8">
     <link href="src/css/design.css" rel="stylesheet">
     <link href="src/css/header.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
 </head>
-<header id="site-header" class="clr" data-height="14" itemscope="itemscope" itemtype="https://schema.org/WPHeader" role="banner">
-
-    <div data-elementor-type="header" data-elementor-id="1071" class="elementor elementor-1071 elementor-location-header" data-elementor-settings="[]">
-        <div class="elementor-section-wrap">
-            <section class="elementor-section elementor-top-section elementor-element elementor-element-541b846b elementor-section-height-min-height elementor-section-full_width elementor-section-height-default elementor-section-items-middle" data-id="541b846b" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;shape_divider_bottom&quot;:&quot;arrow&quot;,&quot;shape_divider_bottom_negative&quot;:&quot;yes&quot;}">
+<body>
+<header>
+    <div>
+        <div>
+            <section>
                 <div class="elementor-background-overlay"></div>
 
                 <div class="elementor-container elementor-column-gap-default">
@@ -168,7 +170,7 @@
         </div>
     </div>
 </header>
-<body>
+
     <main>
         <?php
         require_once __DIR__ . DIRECTORY_SEPARATOR . ".." . DIRECTORY_SEPARATOR . "lib" . DIRECTORY_SEPARATOR . "file.php";
