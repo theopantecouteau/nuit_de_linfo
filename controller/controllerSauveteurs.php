@@ -1,22 +1,21 @@
 <?php
 
-require_once file::build_path(array("model", "modelSauveteur.php"));
+require_once file::build_path(array("model", "modelSauveteurs.php"));
 
-Class controllerSauveteur extends modelSauveteur {
+Class controllerSauveteurs extends modelSauveteurs {
 
-    protected static $object = 'Sauveteur';
+    protected static $object = 'Sauveteurs';
 
     public function readAll(){
         $view = "list.php";
         $pagetitle = "Liste des sauveteurs";
-        $tab = modelSauveteur::selectAll();
         require file::build_path(array("view", "view.php"));
     }
 
     public function read($id){
         $view = "details.php";
         $pagetitle = "";
-        $tab = modelSauveteur::select($id);
+        $tab = modelSauveteurs::select($id);
         require file::build_path(array("view", "view.php"));
     }
 

@@ -1,6 +1,6 @@
 <?php
 require_once file::build_path(array("config", "conf.php"));
-require_once file::build_path(array("controller", "controllerSauveteur.php"));
+require_once file::build_path(array("controller", "controllerSauveteurs.php"));
 require_once file::build_path(array("controller", "controllerSite.php"));
 require_once file::build_path(array("controller", "controllerUser.php"));
 require_once file::build_path(array("controller", "controllerStations.php"));
