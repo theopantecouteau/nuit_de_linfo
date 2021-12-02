@@ -2,8 +2,8 @@
 <html class="html" lang="fr-FR">
 <head>
     <meta charset="UTF-8">
-    <link href="../src/css/design.css" rel="stylesheet">
-    <link href="../src/css/header.css" rel="stylesheet">
+    <link href="src/css/design.css" rel="stylesheet">
+    <link href="src/css/header.css" rel="stylesheet">
 </head>
 <header id="site-header" class="clr" data-height="14" itemscope="itemscope" itemtype="https://schema.org/WPHeader" role="banner">
 

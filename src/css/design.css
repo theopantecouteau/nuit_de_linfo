@@ -6,3 +6,9 @@ body {
     background-size:cover;
 }
 
+main{
+    margin-left: 10% ;
+    margin-right: 10%;
+    background-color: rgba(110, 193, 228, 0.8);
+}
+
