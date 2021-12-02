@@ -137,7 +137,7 @@ class model
         }
     }
 
-    public static function save()
+    public function save()
     {
         $table_name = static::$object;
         $attributs = static::$data;

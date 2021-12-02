@@ -1,5 +1,7 @@
 <?php
 class controllerSite{
+
+
     public static function redirect($page){
         $controller = 'pages';
         $pagetitle = ucwords($page);

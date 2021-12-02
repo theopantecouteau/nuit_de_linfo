@@ -1,9 +1,9 @@
 <?php
-require_once File::build_path(array("model","ModelUser.php"));
-require_once File::build_path(array("lib", "Security.php"));
-class ControllerUser{
+require_once File::build_path(array("model","modelUser.php"));
+require_once File::build_path(array("lib", "security.php"));
+class ControllerUser extends modelUser{
 
-
+    protected static $object = "User";
 
     public static function readAllUser(){
         $controller='utilisateur';

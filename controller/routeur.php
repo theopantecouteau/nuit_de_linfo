@@ -1,7 +1,41 @@
 <?php
 require_once file::build_path(array("config", "conf.php"));
+require_once file::build_path(array("controller", "controllerSauveteur.php"));
+require_once file::build_path(array("controller", "controllerSite.php"));
+require_once file::build_path(array("controller", "controllerUser.php"));
+require_once file::build_path(array("controller", "controllerStations.php"));
+
 // require de tous les Controllers
-require_once file::build_path(array('controller', 'controllerSite.php'));
-require_once file::build_path(array('controller', 'controllerUser.php'));
+$str = "Controller";
+$controller_class = "";
+
+if (!is_null(Conf::myGet('controller'))) {
+    $controller = Conf::myGet('controller');
+    $controller_class = $str . ucfirst($controller);
+}
+
+$methode = get_class_methods($controller_class);
+
+
+if (class_exists($controller_class)) {
+    if (!is_null(Conf::myGet('action'))) {
+        $action = Conf::myGet('action');
+        if (!in_array($action, $methode)) {
+            $controller_class::error();
+        } else if (!is_null(Conf::myGet('id'))) {
+            $id = Conf::myGet('id');
+            if (!is_null(Conf::myGet('login'))) {
+                $login = Conf::myGet('login');
+                $controller_class::$action($id, $login);
+            } else {
+                $controller_class::$action($id);
+            }
+        } else {
+            $controller_class::$action();
+        }
+    } else {
+        require File::build_path(array("view", "view.php"));
+    }
+}
 
 ?>
