@@ -5,9 +5,10 @@ require_once file::build_path(array("controller", "controllerSite.php"));
 require_once file::build_path(array("controller", "controllerUser.php"));
 require_once file::build_path(array("controller", "controllerStations.php"));
 require_once file::build_path(array("controller", "controllerBateau.php"));
+require_once file::build_path(array("controller", "controllerSaved.php"));
 
 // require de tous les Controllers
-$str = "Controller";
+$str = "controller";
 $controller_class = "";
 
 if (!is_null(Conf::myGet('controller'))) {

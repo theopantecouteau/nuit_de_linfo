@@ -6,8 +6,8 @@
 <?php
 foreach ($tab_b as $b){
     $bNom = htmlspecialchars($b->get('nomBateau'));
-    $bNom2 = rawurlencode($b->get('nomBateau'));
-    echo "<p> <a href=index.php?action=read&id=$bNom2> Bateau $bNom</a></p>";
+    $bid = rawurlencode($b->get('id'));
+    echo "<p> <a href=index.php?action=read&id=$bid&controller=bateau> Bateau $bNom</a></p>";
 }
 ?>
 </body>
