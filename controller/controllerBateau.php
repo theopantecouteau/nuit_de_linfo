@@ -3,7 +3,7 @@ require_once file::build_path(array('model', 'modelBateau.php'));
 class controllerBateau
 {
     protected static $object = 'Bateau';
-
+    protected static $data = array();
     public static function readAll(){
         $tab_b = modelBateau::selectAll();
         $view = 'list.php';
@@ -44,6 +44,7 @@ class controllerBateau
     }
     public static function create(){
         $action = 'index.php?action=created&controller=bateau';
+        $rqd = 'required';
         $bId = '';
         $bNom = '';
         $bConstructeur = '';
@@ -68,7 +69,7 @@ class controllerBateau
         ,$_POST['numcoque'], $_POST['poids'], $_POST['vitesse'], $_POST['moteurs'], $_POST['tirantdeau']);
         $data = ['id'=>$_POST['idBateau'],'nom'=>$_POST['nomBateau'], 'constructeur' =>$_POST['constructeur'], 'datecommande'=>$_POST['datecommande'],
             'dimensions'=>$_POST['dimensions'], 'histoire'=> $_POST['histoire'], 'typebateau'=>$_POST['typebateau'], 'finService'=>$_POST['finService'],
-            'numcoque'=>$_POST['numcoque'], 'poids'=>$_POST['poids'], 'vitesse'=>$_POST['vitesse'],'moteurs'=> $_POST['moteurs']
+            'lienimageplan'=> ' ', 'lienimagehistorique'=>'','numcoque'=>$_POST['numcoque'], 'poids'=>$_POST['poids'], 'vitesse'=>$_POST['vitesse'],'moteurs'=> $_POST['moteurs']
             , 'tailletirandeau'=>$_POST['tirantdeau'], 'nomdonnedate'=> $_POST['nomdonnedate']];
         $b1->save($data);
         $tab_b = modelBateau::selectAll();

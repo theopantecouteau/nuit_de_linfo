@@ -7,7 +7,7 @@
 <body>
 <?php
 echo "<p>Le bateau a bien été supprimé</p>";
-require file::build_path(array('view','produit','list.php'));
+require file::build_path(array('view','Bateau','list.php'));
 ?>
 </body>
 </html>
