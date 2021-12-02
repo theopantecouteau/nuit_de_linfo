@@ -10,7 +10,7 @@ Class modelSauveteurs {
     private $id;
     private $nom;
     private $prenom;
-    private $descriptionbreve;
+    private $description;
     private $datenaissance;
     private $datemort;
     private $biographie;
@@ -30,7 +30,7 @@ Class modelSauveteurs {
             $this->id = $id;
             $this->nom = $nom;
             $this->prenom = $prenom;
-            $this->descriptionbreve = $descriptionbreve;
+            $this->description = $description;
             $this->datenaissance = $datenaissance;
             $this->datemort = $datemort;
             $this->biographie = $biographie;
@@ -120,9 +120,9 @@ Class modelSauveteurs {
     /**
      * @return mixed
      */
-    public function getDescriptionbreve()
+    public function getDescription()
     {
-        return $this->descriptionbreve;
+        return $this->description;
     }
 
     /**
@@ -185,6 +185,22 @@ Class modelSauveteurs {
     {
         try {
             $rep = model::getPDO()->query("SELECT DISTINCT nom FROM Sauveteurs__verifTRUE WHERE nom LIKE '$lettre%'");
+            $rep->setFetchMode(PDO::FETCH_CLASS, 'modelSauveteurs');
+            return $tab = $rep->fetchAll();
+        } catch (PDOException $e) {
+            if (conf::getDebug()) {
+                echo $e->getMessage(); // affiche un message d'erreur
+            } else {
+                echo 'Une erreur est survenue <a href=""> retour a la page d\'accueil </a>';
+            }
+            die();
+        }
+    }
+
+    public static function selectAllbyNom($nom)
+    {
+        try {
+            $rep = model::getPDO()->query("SELECT  * FROM Sauveteurs__verifTRUE WHERE nom='$nom'");
             $rep->setFetchMode(PDO::FETCH_CLASS, 'modelSauveteurs');
             return $tab = $rep->fetchAll();
         } catch (PDOException $e) {
