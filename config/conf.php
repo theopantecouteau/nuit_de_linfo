@@ -1,5 +1,5 @@
 <?php
-class Conf {
+class conf {
 
     static private $databases = array(
         // Le nom d'hote est webinfo a l'IUT

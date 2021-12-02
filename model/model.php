@@ -1,7 +1,7 @@
 <?php
-require_once File::build_path(array("config", "Conf.php"));
+require_once file::build_path(array("config", "conf.php"));
 
-class Model
+class model
 {
 
     private static $pdo = NULL;
@@ -9,15 +9,15 @@ class Model
     public static function init()
     {
         try {
-            $hostname = Conf::gethostname();
-            $datebase_name = Conf::getDatabase();
-            $login = Conf::getLogin();
-            $password = Conf::getPassword();
+            $hostname = conf::gethostname();
+            $datebase_name = conf::getDatabase();
+            $login = conf::getLogin();
+            $password = conf::getPassword();
 
             self::$pdo = new PDO("mysql:host=$hostname;dbname=$datebase_name", $login, $password, array(PDO::MYSQL_ATTR_INIT_COMMAND => "SET NAMES utf8"));
             self::$pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
         } catch (PDOException $e) {
-            if (Conf::getDebug()) {
+            if (conf::getDebug()) {
                 echo $e->getMessage();
             } else {
                 echo "Une erreur est survenue";
@@ -37,13 +37,13 @@ class Model
     public static function selectAll()
     {
         $table_name = static::$object;
-        $class_name = 'Model' . ucfirst($table_name);
+        $class_name = 'model' . ucfirst($table_name);
         try {
-            $rep = Model::getPDO()->query("SELECT * FROM $table_name");
+            $rep = model::getPDO()->query("SELECT * FROM $table_name");
             $rep->setFetchMode(PDO::FETCH_CLASS, $class_name);
             return $tab = $rep->fetchAll();
         } catch (PDOException $e) {
-            if (Conf::getDebug()) {
+            if (conf::getDebug()) {
                 echo $e->getMessage(); // affiche un message d'erreur
             } else {
                 echo 'Une erreur est survenue <a href=""> retour a la page d\'accueil </a>';
@@ -55,12 +55,12 @@ class Model
     public static function select($primary_value)
     {
         $table_name = static::$object;
-        $class_name = 'Model' . ucfirst($table_name);
+        $class_name = 'model' . ucfirst($table_name);
         $primary_key = static::$primary;
         try {
             $sql = "SELECT * from $table_name WHERE $primary_key=:nom_tag";
             // Préparation de la requête
-            $req_prep = Model::getPDO()->prepare($sql);
+            $req_prep = model::getPDO()->prepare($sql);
 
             $values = array(
                 "nom_tag" => $primary_value,
@@ -76,7 +76,7 @@ class Model
                 return false;
             return $tab[0];
         } catch (PDOException $e) {
-            if (Conf::getDebug()) {
+            if (conf::getDebug()) {
                 echo $e->getMessage(); // affiche un message d'erreur
             } else {
                 echo 'Une erreur est survenue <a href=""> retour a la page d\'accueil </a>';
@@ -91,13 +91,13 @@ class Model
         $primary_key = static::$primary;
         try {
             $sql = "DELETE FROM $table_name WHERE $primary_key=:tag1";
-            $req_prep = Model::getPDO()->prepare($sql);
+            $req_prep = model::getPDO()->prepare($sql);
             $values = array(
                 "tag1" => $primary_value
             );
             $req_prep->execute($values);
         } catch (PDOException $e) {
-            if (Conf::getDebug()) {
+            if (conf::getDebug()) {
                 echo $e->getMessage(); // affiche un message d'erreur
             } else {
                 echo 'Une erreur est survenue <a href=""> retour a la page d\'accueil </a>';
@@ -125,10 +125,10 @@ class Model
         $sq = $set . " " . "WHERE " . $primary_key .  "=:" . 'primary_key';
         try {
             $sql = "UPDATE $table_name SET $sq";
-            $req_prep = Model::getPDO()->prepare($sql);
+            $req_prep = model::getPDO()->prepare($sql);
             $req_prep->execute($tab);
         } catch (PDOException $e) {
-            if (Conf::getDebug()) {
+            if (conf::getDebug()) {
                 echo $e->getMessage(); // affiche un message d'erreur
             } else {
                 echo 'Une erreur est survenue <a href=""> retour a la page d\'accueil </a>';
@@ -155,12 +155,12 @@ class Model
             $sql = "INSERT INTO $table_name (" . $set . ") VALUES
                     (" . $tag . ") ";
 
-            $req_prep = Model::getPDO()->prepare($sql);
+            $req_prep = model::getPDO()->prepare($sql);
 
             // On donne les valeurs et on exécute la requête
             $req_prep->execute($attributs);
         } catch (PDOException $e) {
-            if (Conf::getDebug()) {
+            if (conf::getDebug()) {
                 echo $e->getMessage(); // affiche un message d'erreur
             } else {
                 echo 'Une erreur est survenue <a href=""> retour a la page d\'accueil </a>';
