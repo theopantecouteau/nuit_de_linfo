@@ -11,10 +11,7 @@
         <div class="elementor-section-wrap">
             <section class="elementor-section elementor-top-section elementor-element elementor-element-541b846b elementor-section-height-min-height elementor-section-full_width elementor-section-height-default elementor-section-items-middle" data-id="541b846b" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;shape_divider_bottom&quot;:&quot;arrow&quot;,&quot;shape_divider_bottom_negative&quot;:&quot;yes&quot;}">
                 <div class="elementor-background-overlay"></div>
-                <div class="elementor-shape elementor-shape-bottom" data-negative="true">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 10" preserveAspectRatio="none">
-                        <path class="elementor-shape-fill" d="M360 0L350 9.9 340 0 0 0 0 10 700 10 700 0"/>
-                    </svg>		</div>
+
                 <div class="elementor-container elementor-column-gap-default">
                     <div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-3c808f5" data-id="3c808f5" data-element_type="column">
                         <div class="elementor-widget-wrap">
