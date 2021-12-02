@@ -15,7 +15,7 @@ Class controllerSauveteurs extends modelSauveteurs {
     public function read($id){
         $view = "details.php";
         $pagetitle = "";
-        $tab = modelSauveteurs::select($id);
+        $tab = modelSauveteurs::selectAllbyNom($id);
         require file::build_path(array("view", "view.php"));
     }
 

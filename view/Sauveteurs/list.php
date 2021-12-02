@@ -9,7 +9,7 @@ $alphabet = array(
         echo "<br>";
         if (!is_null($tab)) {
             foreach ($tab as $p) {
-                echo "<p><a>- {$p->getNom()}</a></p>";
+                echo "<p><a href=index.php?controller=sauveteurs&action=read&id={$p->getNom()}> - {$p->getNom()}</a></p>";
                 echo "  ";
             }
         }
