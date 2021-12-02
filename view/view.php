@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
 </head>
-    <body>
+
         <header id="site-header" class="clr" data-height="14" itemscope="itemscope" itemtype="https://schema.org/WPHeader" role="banner">
 
             <div data-elementor-type="header" data-elementor-id="1071" class="elementor elementor-1071 elementor-location-header" data-elementor-settings="[]">

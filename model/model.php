@@ -36,7 +36,7 @@ class model
 
     public static function selectAll()
     {
-        $table_name = static::$object;
+        $table_name = static::$table;
         $class_name = 'model' . ucfirst($table_name);
         try {
             $rep = model::getPDO()->query("SELECT * FROM $table_name");
