@@ -43,15 +43,33 @@ class controllerBateau
         }
     }
     public static function create(){
-        $action = '';
-        //Liste des attributs à remplir dans formulaire
+        $action = 'index.php?action=created&controller=bateau';
+        $bId = '';
+        $bNom = '';
+        $bConstructeur = '';
+        $bDateCommande = date(null, null);
+        $bDimensions = '';
+        $bHistoire = '';
+        $bTypebateau = '';
+        $bFinService = date(null,null);
+        $bNomdonnedate = date(null,null);
+        $bNumcoque = '';
+        $bPoids = '';
+        $bVitesse = '';
+        $bMoteurs = '';
+        $bTirant = '';
         $view = 'update.php';
         $pagetitle = 'Création d\'un bateau';
         require file::build_path(array('view','view.php'));
     }
     public static function created(){
-        $b1 = new modelBateau(/*Attributs du model*/);
-        $data = [/* Données provenant du form*/];
+        $b1 = new modelBateau($_POST['idBateau'],$_POST['nomBateau'], $_POST['constructeur'],$_POST['datecommande'],$_POST['dimensions'],
+        $_POST['histoire'], $_POST['typebateau'], $_POST['finService'], '', '', $_POST['nomdonnedate']
+        ,$_POST['numcoque'], $_POST['poids'], $_POST['vitesse'], $_POST['moteurs'], $_POST['tirantdeau']);
+        $data = ['id'=>$_POST['idBateau'],'nom'=>$_POST['nomBateau'], 'constructeur' =>$_POST['constructeur'], 'datecommande'=>$_POST['datecommande'],
+            'dimensions'=>$_POST['dimensions'], 'histoire'=> $_POST['histoire'], 'typebateau'=>$_POST['typebateau'], 'finService'=>$_POST['finService'],
+            'numcoque'=>$_POST['numcoque'], 'poids'=>$_POST['poids'], 'vitesse'=>$_POST['vitesse'],'moteurs'=> $_POST['moteurs']
+            , 'tailletirandeau'=>$_POST['tirantdeau'], 'nomdonnedate'=> $_POST['nomdonnedate']];
         $b1->save($data);
         $tab_b = modelBateau::selectAll();
         $view = 'created.php';
@@ -60,15 +78,32 @@ class controllerBateau
     }
     public static function update($idBateau){
         $b1 = modelBateau::select($idBateau);
-        $action = '';
+        $action = 'index.php?action=updated&controller=bateau';
         $rqd = 'readonly';
+        $bId = $b1->get('id');
+        $bNom = $b1->get('nomBateau');
+        $bConstructeur = $b1->get('constructeur');
+        $bDateCommande = $b1->get('datecommande');
+        $bDimensions = $b1->get('dimensions');
+        $bHistoire = $b1->get('histoire');
+        $bTypebateau = $b1->get('typeBateau');
+        $bFinService = $b1->get('finService');
+        $bNomdonnedate = $b1->get('nomdonnedate');
+        $bNumcoque = $b1->get('numCoque');
+        $bPoids = $b1->get('poids');
+        $bVitesse = $b1->get('vitesse');
+        $bMoteurs = $b1->get('moteurs');
+        $bTirant = $b1->get('tirantDeau');
         //récup des attributs du bateau que l'on veut modifier.
         $view = 'update.php';
         $pagetitle = 'Modification d\'un bateau';
         require file::build_path(array('view', 'view.php'));
     }
     public static function updated(){
-        $data = [/*Données provenant du formulaire*/];
+        $data = ['id'=>$_POST['idBateau'],'nom'=>$_POST['nomBateau'], 'constructeur' =>$_POST['constructeur'], 'datecommande'=>$_POST['datecommande'],
+            'dimensions'=>$_POST['dimensions'], 'histoire'=> $_POST['histoire'], 'typebateau'=>$_POST['typebateau'], 'finService'=>$_POST['finService'],
+            'numcoque'=>$_POST['numcoque'], 'poids'=>$_POST['poids'], 'vitesse'=>$_POST['vitesse'],'moteurs'=> $_POST['moteurs']
+            , 'tailletirandeau'=>$_POST['tirantdeau'], 'nomdonnedate'=> $_POST['nomdonnedate']];
         modelBateau::update($data);
         $tab_p = ModelProduit::selectAll();
         $view = 'updated.php';

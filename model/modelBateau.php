@@ -19,7 +19,7 @@ class modelBateau extends model{
     private $moteurs;
     private $tirantDeau;
     protected static $object = 'bateau';
-    protected static $primary = 'idBateau';
+    protected static $primary = 'id';
     protected static $table = 'bateau';
 
 
