@@ -184,7 +184,7 @@ Class modelSauveteurs {
     public static function selectAllbyLetter($lettre)
     {
         try {
-            $rep = model::getPDO()->query("SELECT * FROM Sauveteurs__verifTRUE WHERE nom LIKE '$lettre%'");
+            $rep = model::getPDO()->query("SELECT DISTINCT nom FROM Sauveteurs__verifTRUE WHERE nom LIKE '$lettre%'");
             $rep->setFetchMode(PDO::FETCH_CLASS, 'modelSauveteurs');
             return $tab = $rep->fetchAll();
         } catch (PDOException $e) {

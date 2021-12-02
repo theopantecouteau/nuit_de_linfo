@@ -6,7 +6,7 @@ Class controllerSauveteurs extends modelSauveteurs {
 
     protected static $object = 'Sauveteurs';
 
-    public function readAll($lettre){
+    public function readAll(){
         $view = "list.php";
         $pagetitle = "Liste des sauveteurs";
         require file::build_path(array("view", "view.php"));

@@ -3,7 +3,6 @@
 <head>
     <meta charset="UTF-8">
 </head>
-
         <header id="site-header" class="clr" data-height="14" itemscope="itemscope" itemtype="https://schema.org/WPHeader" role="banner">
 
             <div data-elementor-type="header" data-elementor-id="1071" class="elementor elementor-1071 elementor-location-header" data-elementor-settings="[]">
@@ -35,7 +34,7 @@
                                                 <ul id="menu-1-398cc49" class="elementor-nav-menu"><li class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-has-children menu-item-17"><a href="https://sauveteurdudunkerquois.fr/" aria-current="page" class="elementor-item elementor-item-active">Sauveteurs</a>
                                                         <ul class="sub-menu elementor-nav-menu--dropdown">
                                                             <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1283"><a href="https://sauveteurdudunkerquois.fr/tableau-d-honneur/" class="elementor-sub-item">Tableau d’honneur</a></li>
-                                                            <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1512"><a href="https://sauveteurdudunkerquois.fr/nos-sauveteurs/" class="elementor-sub-item">Qui étaient ils</a></li>
+                                                            <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1512"><a href="index.php?controller=sauveteurs&action=readAll" class="elementor-sub-item">Qui étaient ils</a></li>
                                                             <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-1618"><a href="https://sauveteurdudunkerquois.fr/les-acteurs/" class="elementor-sub-item">Que faisaient ils?</a>
                                                                 <ul class="sub-menu elementor-nav-menu--dropdown">
                                                                     <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1622"><a href="https://sauveteurdudunkerquois.fr/douaniers_sauveteurs-dunkerque/" class="elementor-sub-item">Douaniers et sauveteurs</a></li>
