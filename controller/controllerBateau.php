@@ -1,78 +1,78 @@
 <?php
-// require modelbateaux
+require_once file::build_path(array('model', 'modelBateau.php'));
 class controllerBateau
 {
-    protected static $object = 'bateau';
+    protected static $object = 'Bateau';
 
     public static function readAll(){
-        $tab_b = ModelBateau::selectAll();
-        $view = 'list';
+        $tab_b = modelBateau::selectAll();
+        $view = 'list.php';
         $pagetitle = 'Liste des bateaux';
-        require File2::build_path(array('view', 'view.php'));
+        require file::build_path(array('view', 'view.php'));
     }
     public static function error(){
-        $view = 'error';
+        $view = 'error.php';
         $pagetitle = 'Erreur';
-        require File2::build_path(array('view', 'view.php'));
+        require file::build_path(array('view', 'view.php'));
     }
     public static function read($idBateau){
-        if(!ModelBateau::select($idBateau)){
-            $view = 'error';
+        if(!modelBateau::select($idBateau)){
+            $view = 'error.php';
             $pagetitle = 'Erreur';
-            require File2::build_path(array('view','view.php'));
+            require file::build_path(array('view','view.php'));
         }
         else{
-            $b = ModelBateau::select($idBateau);
-            $view = 'detail';
+            $b = modelBateau::select($idBateau);
+            $view = 'detail.php';
             $pagetitle = 'Détails du bateau';
-            require File2::build_path(array('view','view.php'));
+            require file::build_path(array('view','view.php'));
         }
     }
     public static function delete($idBateau){
-        if(!ModelBateau::select($idBateau)){
-            $view = 'error';
+        if(!modelBateau::select($idBateau)){
+            $view = 'error.php';
             $pagetitle = 'Erreur';
-            require File2::build_path(array('view','view.php'));
+            require file::build_path(array('view','view.php'));
         }
         else{
-            ModelBateau::delete($idBateau);
-            $tab_b = ModelBateau::selectAll();
-            $view = 'deleted';
+            modelBateau::delete($idBateau);
+            $tab_b = modelBateau::selectAll();
+            $view = 'deleted.php';
             $pagetitle = 'Bateau supprimé';
-            require File2::build_path(array('view', 'view.php'));
+            require file::build_path(array('view', 'view.php'));
         }
     }
     public static function create(){
         $action = '';
         //Liste des attributs à remplir dans formulaire
-        $view = 'update';
+        $view = 'update.php';
         $pagetitle = 'Création d\'un bateau';
-        require File2::build_path(array('view','view.php'));
+        require file::build_path(array('view','view.php'));
     }
     public static function created(){
-        $b1 = new ModelBateau(/*Attributs du model*/);
+        $b1 = new modelBateau(/*Attributs du model*/);
         $data = [/* Données provenant du form*/];
         $b1->save($data);
-        $tab_b = ModelBateau::selectAll();
-        $view = 'created';
+        $tab_b = modelBateau::selectAll();
+        $view = 'created.php';
         $pagetitle = 'Bateau créé';
-        require File2::build_path(array('view', 'view.php'));
+        require file::build_path(array('view', 'view.php'));
     }
     public static function update($idBateau){
-        $b1 = ModelBateau::select($idBateau);
+        $b1 = modelBateau::select($idBateau);
         $action = '';
         $rqd = 'readonly';
         //récup des attributs du bateau que l'on veut modifier.
-        $view = 'update';
+        $view = 'update.php';
         $pagetitle = 'Modification d\'un bateau';
-        require File2::build_path(array('view', 'view.php'));
+        require file::build_path(array('view', 'view.php'));
     }
     public static function updated(){
         $data = [/*Données provenant du formulaire*/];
-        ModelBateau::update($data, $_POST['idBateau']);
+        modelBateau::update($data);
         $tab_p = ModelProduit::selectAll();
-        $view = 'updated';
+        $view = 'updated.php';
         $pagetitle = 'Bateau mis à jour';
-        require File2::build_path(array('view', 'view.php'));
+        require file::build_path(array('view', 'view.php'));
     }
 }
