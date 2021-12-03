@@ -1,0 +1,8 @@
+#fieldMessage{
+    border: none;
+    text-align: center;
+}
+
+#fieldMessage div{
+    padding: 15px;
+}

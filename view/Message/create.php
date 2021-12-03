@@ -1,8 +1,8 @@
 
 <div id="container">
     <form method="post" action="index.php?controller=message&action=created" enctype=\"multipart/form-data\">
-        <fieldset>
-            <legend>Mon formulaire :</legend>
+        <fieldset id="fieldMessage">
+            <legend>Envoyer un message :</legend>
             <p>
             <div id="gauche">
                 <label  for="Id_id" class="form-label">prenom</label> :
