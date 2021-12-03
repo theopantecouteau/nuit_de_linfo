@@ -137,7 +137,7 @@ class model
         }
     }
 
-    public function save()
+    /*public function save()
     {
         $table_name = static::$object;
         $attributs = static::$data;
@@ -167,5 +167,5 @@ class model
             }
             die();
         }
-    }
+    }*/
 }
