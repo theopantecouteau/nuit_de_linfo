@@ -19,8 +19,7 @@
 
 
 
-        <div class="wp-block-cover aligncenter has-background-dim has-background-gradient" style="min-height:236px"><span aria-hidden="true" class="wp-block-cover__gradient-background" style="background:linear-gradient(135deg,rgb(6,147,227) 37%,rgb(155,81,224) 100%)"></span><img loading="lazy" width="1024" height="315" class="wp-block-cover__image-background wp-image-2012" alt="" src="https://sauveteurdudunkerquois.fr/wp-content/uploads/2021/09/1PF8675-1024x315.jpg" data-object-fit="cover" srcset="https://sauveteurdudunkerquois.fr/wp-content/uploads/2021/09/1PF8675-1024x315.jpg 1024w, https://sauveteurdudunkerquois.fr/wp-content/uploads/2021/09/1PF8675-300x92.jpg 300w, https://sauveteurdudunkerquois.fr/wp-content/uploads/2021/09/1PF8675-768x236.jpg 768w, https://sauveteurdudunkerquois.fr/wp-content/uploads/2021/09/1PF8675-1536x472.jpg 1536w, https://sauveteurdudunkerquois.fr/wp-content/uploads/2021/09/1PF8675-2048x629.jpg 2048w" sizes="(max-width: 1024px) 100vw, 1024px" /><div class="wp-block-cover__inner-container">
-                <p class="has-text-align-center has-large-font-size"><em><span class="has-inline-color has-white-color"><sup>Les sauvetages? Mais tout le monde en fait …<br>Si un homme tombe dans la «&nbsp;Baille&nbsp;»<br>est ce qu’on ne va pas le chercher?<br>Il n’y a à cela aucun mérit</sup></span></em><sup><em><span class="has-inline-color has-white-color">e</span></em>&#8230;</sup></p>
+        <p class="has-text-align-center has-large-font-size"><em><span class="has-inline-color has-white-color"><sup>Les sauvetages? Mais tout le monde en fait …<br>Si un homme tombe dans la «&nbsp;Baille&nbsp;»<br>est ce qu’on ne va pas le chercher?<br>Il n’y a à cela aucun mérit</sup></span></em><sup><em><span class="has-inline-color has-white-color">e</span></em>&#8230;</sup></p>
             </div></div>
 
 
