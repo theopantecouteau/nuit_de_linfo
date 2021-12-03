@@ -269,20 +269,23 @@
                     </div>
                 </div>
             </a>
-            <a href="?controller=site&action=register&page=" class="button">
+            <a href="?controller=site&action=register&page=historique" class="button">
                 <div class="divparent1">
                     <div class="button_div">Historique</div>
                     <div class="sub1">
-                        <a href="?controller=site&action=register&page=" class="button sub1_button">
+                        <a href="?controller=site&action=register&page=ephemeride" class="button sub1_button">
                             <div class="button_div">Ephéméride du sauvetage</div>
                         </a>
-                        <a href="?controller=site&action=register&page=" class="button sub1_button">
+                        <a href="?controller=site&action=register&page=societe_humaine" class="button sub1_button">
                             <div class="button_div">40 ans de Société Humaine</div>
                         </a>
-                        <a href="?controller=site&action=register&page=" class="button sub1_button">
+                        <a href="?controller=site&action=register&page=scsn" class="button sub1_button">
                             <div class="button_div">Société Centrale de Sauvetage des Naufragés</div>
                         </a>
-                        <a href="?controller=site&action=register&page=" class="button sub1_button">
+                        <a href="?controller=site&action=register&page=snsm" class="button sub1_button">
+                            <div class="button_div">Société Nationale de Sauvetage en Mer</div>
+                        </a>
+                        <a href="?controller=site&action=register&page=comites_locaux" class="button sub1_button">
                             <div class="button_div">Les comités locaux</div>
                         </a>
                     </div>
