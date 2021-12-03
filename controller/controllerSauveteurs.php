@@ -19,6 +19,13 @@ Class controllerSauveteurs extends modelSauveteurs {
         require file::build_path(array("view", "view.php"));
     }
 
+    public function readid($id){
+        $view = "details.php";
+        $pagetitle = "Voici les détails sur ce sauveteur";
+        $tab = modelSauveteurs::selectAllbyid($id);
+        require file::build_path(array("view", "view.php"));
+    }
+
     public function tableau(){
         $view = "tableau_honneur.php";
         $pagetitle = "Tableau d'honneur";
@@ -113,12 +120,13 @@ Class controllerSauveteurs extends modelSauveteurs {
         $actionFormulaire="createdModif";
         $view="create.php";
         $pagetitle="Modifier des informations";
-        $id="{$p->getId()}";
-        $nom ="{$p->getNom()}";
-        $prenom="{$p->getPrenom()}";
-        $description="{$p->getDescription()}";
-        $dateNaissance="{$p->getDatenaissance()}";
-        $dateMort="{$p->getDatemort()}";
+
+        $id="{$p[0]->getId()}";
+        $nom ="{$p[0]->getNom()}";
+        $prenom="{$p[0]->getPrenom()}";
+        $description="{$p[0]->getDescription()}";
+        $dateNaissance="{$p[0]->getDatenaissance()}";
+        $dateMort="{$p[0]->getDatemort()}";
         $bouton= "Modifier";
         require file::build_path(array("view", "view.php"));
 

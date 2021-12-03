@@ -7,6 +7,8 @@ require_once file::build_path(array("controller", "controllerStations.php"));
 require_once file::build_path(array("controller", "controllerBateau.php"));
 require_once file::build_path(array("controller", "controllerSaved.php"));
 require_once file::build_path(array("controller", "controllerSearch.php"));
+require_once file::build_path(array('controller', 'controllerMoyens.php'));
+require_once file::build_path(array('controller', 'controllerMessage.php'));
 
 
 // require de tous les Controllers
@@ -17,6 +19,9 @@ if (!is_null(Conf::myGet('controller'))) {
     $controller = Conf::myGet('controller');
     $controller_class = $str . ucfirst($controller);
 
+}
+else{
+    header('Location : index.php?controller=sauveteurs&action=acteurs');
 }
 
 $methode = get_class_methods($controller_class);
