@@ -5,14 +5,17 @@ $alphabet = array(
 
 foreach ($alphabet as $letter){
     echo $letter;
-    $tab = modelSaved::getAllbyLetter($letter);
+    $tab = modelSaved::selectAllbyLetter($letter);
     echo "<br>";
     if (!is_null($tab)) {
         foreach ($tab as $p) {
-            echo "<p><a>- {$p->getNom()}</a></p>";
+            $id = $p->getId();
+            echo "<p><a href=index.php?controller=saved&action=read&id=$id>{$p->getNom()}</a></p>";
             echo "  ";
         }
     }
     echo "<br>";
 }
+
+echo 'Vous souhaitez proposer l\'ajout d\'une personne sauvée ? Remplissez le <a href="?controller=saved&action=create">formulaire</a> et nous analyserons votre suggestion !';
 ?>
