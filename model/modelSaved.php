@@ -6,7 +6,6 @@ class modelSaved{
     private $prenom;
     private $date;
     private $idSauvetage;
-    private $nomSauvetage;
 
     public function getId()
     {
@@ -33,28 +32,21 @@ class modelSaved{
         return $this->idSauvetage;
     }
 
-    public function getNomSauvetage()
+    public function __construct($id = NULL, $nom = NULL, $prenom = NULL, $date = NULL, $idSauvetage = NULL)
     {
-        return $this->nomSauvetage;
-    }
-
-    public function __construct($id, $nom, $prenom, $date, $idSauvetage = NULL, $nomSauvetage = NULL)
-    {
-        $this->id = $id;
-        $this->nom = $nom;
-        $this->prenom = $prenom;
-        $this->date = $date;
-        if ($nomSauvetage == NULL){
+        if (!is_null($nom) && !is_null($prenom) && !is_null($date)) {
+            $this->id = $id;
+            $this->nom = $nom;
+            $this->prenom = $prenom;
+            $this->date = $date;
             $this->idSauvetage = $idSauvetage;
-        } else {
-            $this->nomSauvetage = $nomSauvetage;
         }
     }
 
-    public static function getAllbyLetter($lettre)
+    public static function selectAllbyLetter($lettre)
     {
         try {
-            $rep = model::getPDO()->query("SELECT DISTINCT nom FROM PersonnesSecourus__VERIF WHERE nom LIKE '$lettre%'");
+            $rep = model::getPDO()->query("SELECT DISTINCT * FROM PersonnesSecourus__VERIF WHERE nom LIKE '$lettre%'");
             $rep->setFetchMode(PDO::FETCH_CLASS, 'modelSaved');
             return $tab = $rep->fetchAll();
         } catch (PDOException $e) {
@@ -69,7 +61,7 @@ class modelSaved{
 
     public static function getSaved($id){
         try{
-            $sql = "SELECT * from PersonneSecourus__VERIF WHERE id=:id";
+            $sql = "SELECT * from PersonnesSecourus__VERIF WHERE id=:id";
             $req_prep = Model::getPDO()->prepare($sql);
             $values = array(
                 "id" => $id,

@@ -1,6 +1,6 @@
-<form class="transparent" method="post">
+<form method="post" action="?controller=saved&action=created">
 <fieldset>
-    <legend>Renseignez vos informations :</legend>
+    <legend>Renseignez les informations sur la personne secourue :</legend>
         <p>
             <label for="nom">Nom de la personne sauvée</label> :
             <input type="text" name="nom" id="nom" required/>
@@ -15,7 +15,7 @@
         </p>
         <p>
             <label for="date">Date du sauvetage</label> :
-            <input type="date" name="date" class="date" required/>
+            <input type="text" placeholder="2002-03-24" name="date" class="date" required/>
         </p>
         <p>
             <input type="submit" value="Soumettre" />

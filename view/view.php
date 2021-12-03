@@ -317,6 +317,9 @@
                 <div class="button_div">Estaminet</div>
             </a>
         </div>
+        <div >
+        <a href=""><img style="width: 100px; height: auto;" src="https://svgsilh.com/svg/307307.svg"></a>
+        </div>
     </div>
 </header>
 
