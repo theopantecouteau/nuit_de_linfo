@@ -320,6 +320,16 @@
    </div>
 </header>
 
+<form method=post action="index.php?controller=search&action=searched">
+    <fieldset>
+        <legend>Rechercher</legend>
+        <p>
+            <input type="text"  name="search"  required />
+            <input type="submit" value="Rechercher" />
+        </p>
+    </fieldset>
+</form>
+
     <main>
         <?php
         require_once __DIR__ . DIRECTORY_SEPARATOR . ".." . DIRECTORY_SEPARATOR . "lib" . DIRECTORY_SEPARATOR . "file.php";
