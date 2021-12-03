@@ -102,7 +102,7 @@ class controllerBateau
             'numcoque'=>$_POST['numcoque'], 'poids'=>$_POST['poids'], 'vitesse'=>$_POST['vitesse'],'moteurs'=> $_POST['moteurs']
             , 'tailletirandeau'=>$_POST['tirantdeau'], 'nomdonnedate'=> $_POST['nomdonnedate'], 'idMoyen' => $_POST['idMoyen']];
         modelBateau::update($data);
-        $tab_p = ModelProduit::selectAll();
+        $tab_p = ModelBateau::selectAll();
         $view = 'updated.php';
         $pagetitle = 'Bateau mis à jour';
         require file::build_path(array('view', 'view.php'));

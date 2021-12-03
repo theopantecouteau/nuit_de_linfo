@@ -11,7 +11,6 @@ Class controllerSearch {
 
     public function searched(){
         $letter = conf::myGet('search');
-        echo ($letter);
         $p=modelSauveteurs::selectAllbyLetter($letter);
         $c= modelBateau::selectAllbyLetter($letter);
         //$d= modelSaved::getAllbyLetter($letter);

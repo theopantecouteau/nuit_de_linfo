@@ -2,7 +2,6 @@
 
 
 foreach($p as $sauveteur){
-    var_dump($p);
     $id = $sauveteur->getId();
     echo ("<p><a href=index.php?controller=sauveteurs&action=readid&id={$id}>{$sauveteur->getNom()}</a></p>");
     echo "<br>";
