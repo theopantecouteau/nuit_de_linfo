@@ -149,7 +149,7 @@
                     </div>
                 </div>
             </a>
-            <a href="?controller=site&action=register&page=" class="button">
+            <a href="?controller=site&action=register&page=stations" class="button">
                 <div class="divparent1">
                     <div class="button_div">Stations</div>
                     <div class="sub1">
@@ -228,42 +228,42 @@
                     </div>
                 </div>
             </a>
-            <a href="?controller=site&action=register&page=" class="button">
+            <a href="?controller=site&action=register&page=techniques" class="button">
                 <div class="divparent1">
                     <div class="button_div">Techniques</div>
                     <div class="sub1">
-                        <a href="?controller=site&action=register&page=" class="button sub1_button">
+                        <a href="" class="button sub1_button">
                             <div class="divparent2 ">
                                 <div class="button_div sub2_button_div">Matériels</div>
                                 <div class="sub2">
-                                    <a href="?controller=site&action=register&page=" class="button sub2_button">
+                                    <a href="?controller=site&action=register&page=brunel" class="button sub2_button">
                                         <div class="button_div">Ligne Brunel</div>
                                     </a>
-                                    <a href="?controller=site&action=register&page=" class="button sub2_button">
+                                    <a href="?controller=site&action=register&page=torres" class="button sub2_button">
                                         <div class="button_div">Ligne Torres</div>
                                     </a>
-                                    <a href="?controller=site&action=register&page=" class="button sub2_button">
+                                    <a href="?controller=site&action=register&page=legrand" class="button sub2_button">
                                         <div class="button_div">Gaffe Legrand</div>
                                     </a>
-                                    <a href="?controller=site&action=register&page=" class="button sub2_button">
+                                    <a href="?controller=site&action=register&page=canon" class="button sub2_button">
                                         <div class="button_div">Canon porte amarre</div>
                                     </a>
-                                    <a href="?controller=site&action=register&page=" class="button sub2_button">
+                                    <a href="?controller=site&action=register&page=fusil" class="button sub2_button">
                                         <div class="button_div">Fusil porte-Amarre</div>
                                     </a>
-                                    <a href="?controller=site&action=register&page=" class="button sub2_button">
+                                    <a href="?controller=site&action=register&page=delvigne" class="button sub2_button">
                                         <div class="button_div">Flèche Delvigne</div>
                                     </a>
-                                    <a href="?controller=site&action=register&page=" class="button sub2_button">
+                                    <a href="?controller=site&action=register&page=ceinture" class="button sub2_button">
                                         <div class="button_div">Sauveteur Ceinture 1870</div>
                                     </a>
                                 </div>
                             </div>
                         </a>
-                        <a href="?controller=site&action=register&page=" class="button sub1_button">
+                        <a href="?controller=site&action=register&page=sauvetage" class="button sub1_button">
                             <div class="button_div">Sauvetage des personnes</div>
                         </a>
-                        <a href="?controller=site&action=register&page=" class="button sub1_button">
+                        <a href="?controller=site&action=register&page=va_et_vient" class="button sub1_button">
                             <div class="button_div">Va-et-vient</div>
                         </a>
                     </div>
