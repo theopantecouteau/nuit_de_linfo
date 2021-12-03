@@ -16,17 +16,11 @@ class controllerBateau
         require file::build_path(array('view', 'view.php'));
     }
     public static function read($idBateau){
-        if(!modelBateau::select($idBateau)){
-            $view = 'error.php';
-            $pagetitle = 'Erreur';
-            require file::build_path(array('view','view.php'));
-        }
-        else{
             $b = modelBateau::select($idBateau);
             $view = 'detail.php';
             $pagetitle = 'Détails du bateau';
             require file::build_path(array('view','view.php'));
-        }
+
     }
     public static function delete($idBateau){
         if(!modelBateau::select($idBateau)){

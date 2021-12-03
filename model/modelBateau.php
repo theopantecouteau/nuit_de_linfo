@@ -2,8 +2,8 @@
 require_once file::build_path(array('model', 'model.php'));
 class modelBateau extends model{
 
-    private $idBateau;
-    private $nomBateau;
+    private $id;
+    private $nom;
     private $constructeur;
     private $datecommande;
     private $dimensions;
@@ -23,6 +23,328 @@ class modelBateau extends model{
     protected static $primary = 'id';
     protected static $table = 'Bateau__PASVERIF';
 
+    /**
+     * @return mixed
+     */
+    public function getId()
+    {
+        return $this->id;
+    }
+
+    /**
+     * @param mixed $idBateau
+     */
+    public function setId($idBateau)
+    {
+        $this->id = $idBateau;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getNomBateau()
+    {
+        return $this->nom;
+    }
+
+    /**
+     * @param mixed $nomBateau
+     */
+    public function setNomBateau($nomBateau)
+    {
+        $this->nom = $nomBateau;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getConstructeur()
+    {
+        return $this->constructeur;
+    }
+
+    /**
+     * @param mixed $constructeur
+     */
+    public function setConstructeur($constructeur)
+    {
+        $this->constructeur = $constructeur;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getDatecommande()
+    {
+        return $this->datecommande;
+    }
+
+    /**
+     * @param mixed $datecommande
+     */
+    public function setDatecommande($datecommande)
+    {
+        $this->datecommande = $datecommande;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getDimensions()
+    {
+        return $this->dimensions;
+    }
+
+    /**
+     * @param mixed $dimensions
+     */
+    public function setDimensions($dimensions)
+    {
+        $this->dimensions = $dimensions;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getHistoire()
+    {
+        return $this->histoire;
+    }
+
+    /**
+     * @param mixed $histoire
+     */
+    public function setHistoire($histoire)
+    {
+        $this->histoire = $histoire;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getTypeBateau()
+    {
+        return $this->typeBateau;
+    }
+
+    /**
+     * @param mixed $typeBateau
+     */
+    public function setTypeBateau($typeBateau)
+    {
+        $this->typeBateau = $typeBateau;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getFinService()
+    {
+        return $this->finService;
+    }
+
+    /**
+     * @param mixed $finService
+     */
+    public function setFinService($finService)
+    {
+        $this->finService = $finService;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getLienImagePlan()
+    {
+        return $this->lienImagePlan;
+    }
+
+    /**
+     * @param mixed $lienImagePlan
+     */
+    public function setLienImagePlan($lienImagePlan)
+    {
+        $this->lienImagePlan = $lienImagePlan;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getLienimageHistorique()
+    {
+        return $this->lienimageHistorique;
+    }
+
+    /**
+     * @param mixed $lienimageHistorique
+     */
+    public function setLienimageHistorique($lienimageHistorique)
+    {
+        $this->lienimageHistorique = $lienimageHistorique;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getNomdonnedate()
+    {
+        return $this->nomdonnedate;
+    }
+
+    /**
+     * @param mixed $nomdonnedate
+     */
+    public function setNomdonnedate($nomdonnedate)
+    {
+        $this->nomdonnedate = $nomdonnedate;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getNumCoque()
+    {
+        return $this->numCoque;
+    }
+
+    /**
+     * @param mixed $numCoque
+     */
+    public function setNumCoque($numCoque)
+    {
+        $this->numCoque = $numCoque;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getPoids()
+    {
+        return $this->poids;
+    }
+
+    /**
+     * @param mixed $poids
+     */
+    public function setPoids($poids)
+    {
+        $this->poids = $poids;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getVitesse()
+    {
+        return $this->vitesse;
+    }
+
+    /**
+     * @param mixed $vitesse
+     */
+    public function setVitesse($vitesse)
+    {
+        $this->vitesse = $vitesse;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getMoteurs()
+    {
+        return $this->moteurs;
+    }
+
+    /**
+     * @param mixed $moteurs
+     */
+    public function setMoteurs($moteurs)
+    {
+        $this->moteurs = $moteurs;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getTirantDeau()
+    {
+        return $this->tirantDeau;
+    }
+
+    /**
+     * @param mixed $tirantDeau
+     */
+    public function setTirantDeau($tirantDeau)
+    {
+        $this->tirantDeau = $tirantDeau;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getIdMoyen()
+    {
+        return $this->idMoyen;
+    }
+
+    /**
+     * @param mixed $idMoyen
+     */
+    public function setIdMoyen($idMoyen)
+    {
+        $this->idMoyen = $idMoyen;
+    }
+
+    /**
+     * @return string
+     */
+    public static function getObject()
+    {
+        return self::$object;
+    }
+
+    /**
+     * @param string $object
+     */
+    public static function setObject($object)
+    {
+        self::$object = $object;
+    }
+
+    /**
+     * @return string
+     */
+    public static function getPrimary()
+    {
+        return self::$primary;
+    }
+
+    /**
+     * @param string $primary
+     */
+    public static function setPrimary($primary)
+    {
+        self::$primary = $primary;
+    }
+
+    /**
+     * @return string
+     */
+    public static function getTable()
+    {
+        return self::$table;
+    }
+
+    /**
+     * @param string $table
+     */
+    public static function setTable($table)
+    {
+        self::$table = $table;
+    }
+
+
+
 
     public function get($nom_attribut){
         if(property_exists($this, $nom_attribut))
@@ -36,14 +358,14 @@ class modelBateau extends model{
         return false;
     }
 
-    public function __construct($idBateau = NULL, $constructeur = NULL,$nomBateau = NULL, $datecommande = NULL, $dimensions = NULL, $histoire = NULL, $typeBateau = NULL,
+    public function __construct($id = NULL, $constructeur = NULL,$nomBateau = NULL, $datecommande = NULL, $dimensions = NULL, $histoire = NULL, $typeBateau = NULL,
                                 $finService = NULL, $lienImagePlan = NULL, $lienimageHistorique = NULL, $nomdonnedate = NULL, $numCoque = NULL, $poids = NULL, $vitesse = NULL,
                                 $moteurs = NULL, $tirantDeau = NULL, $idMoyen = NULL){
-        if(!is_null($idBateau) && !is_null($nomBateau) && !is_null($constructeur) &&!is_null($datecommande) && !is_null($dimensions) && !is_null($histoire) && !is_null($typeBateau)
+        if(!is_null($id) && !is_null($nomBateau) && !is_null($constructeur) &&!is_null($datecommande) && !is_null($dimensions) && !is_null($histoire) && !is_null($typeBateau)
         && !is_null($finService) && !is_null($lienImagePlan) && !is_null($lienimageHistorique) && !is_null($nomdonnedate) && !is_null($numCoque) && !is_null($poids)
         && !is_null($vitesse) && !is_null($moteurs) && !is_null($tirantDeau) && !is_null($idMoyen)){
-            $this->idBateau = $idBateau;
-            $this->nomBateau = $nomBateau;
+            $this->id = $id;
+            $this->nom = $nomBateau;
             $this->constructeur = $constructeur;
             $this->datecommande = $datecommande;
             $this->dimensions = $dimensions;
@@ -60,6 +382,7 @@ class modelBateau extends model{
             $this->tirantDeau = $tirantDeau;
             $this->idMoyen = $idMoyen;
         }
+
     }
     public static function selectAll()
     {
@@ -183,6 +506,22 @@ class modelBateau extends model{
             $req_prep->execute($tab);
         } catch (PDOException $e) {
             if (Conf::getDebug()) {
+                echo $e->getMessage(); // affiche un message d'erreur
+            } else {
+                echo 'Une erreur est survenue <a href=""> retour a la page d\'accueil </a>';
+            }
+            die();
+        }
+    }
+
+    public static function selectAllbyLetter($lettre)
+    {
+        try {
+            $rep = model::getPDO()->query("SELECT * FROM Bateau__VERIF WHERE nom LIKE '%$lettre%'");
+            $rep->setFetchMode(PDO::FETCH_CLASS, 'modelBateau');
+            return $tab = $rep->fetchAll();
+        } catch (PDOException $e) {
+            if (conf::getDebug()) {
                 echo $e->getMessage(); // affiche un message d'erreur
             } else {
                 echo 'Une erreur est survenue <a href=""> retour a la page d\'accueil </a>';

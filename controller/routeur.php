@@ -18,6 +18,9 @@ if (!is_null(Conf::myGet('controller'))) {
     $controller_class = $str . ucfirst($controller);
 
 }
+else{
+    header('Location : index.php?controller=sauveteurs&action=acteurs');
+}
 
 $methode = get_class_methods($controller_class);
 

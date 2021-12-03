@@ -1,16 +1,18 @@
 <?php
 
-echo $letter;
 
 foreach($p as $sauveteur){
-    echo ($sauveteur->getNom());
+    var_dump($p);
+    $id = $sauveteur->getId();
+    echo ("<p><a href=index.php?controller=sauveteurs&action=readid&id={$id}>{$sauveteur->getNom()}</a></p>");
+    echo "<br>";
 }
 
-foreach($c as $bateau){
-    echo ($bateau->getNom());
+foreach ($c as $bateau){
+    $id = $bateau->getId();
+    echo ("<p><a href=index.php?controller=bateau&action=read&id={$id}>{$bateau->getNomBateau()}</a></p>");
+    echo "<br>";
+
 }
 
-foreach ($d as $sauve){
-    echo ($sauve->getNom());
-}
 ?>
