@@ -1,9 +1,6 @@
 body {
-    background-image: url("../images/fond.png");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size:cover;
+    background: #fff;
+    font-family: 'Montserrat', sans-serif;
 }
 
 main{
