@@ -7,7 +7,7 @@ require_once file::build_path(array("controller", "controllerStations.php"));
 require_once file::build_path(array("controller", "controllerBateau.php"));
 require_once file::build_path(array("controller", "controllerSaved.php"));
 require_once file::build_path(array("controller", "controllerSearch.php"));
-
+require_once file::build_path(array('controller', 'controllerMoyens.php'));
 
 // require de tous les Controllers
 $str = "controller";
@@ -24,8 +24,10 @@ else{
 
 $methode = get_class_methods($controller_class);
 
-
-if (class_exists($controller_class)) {
+if (isset($_GET['page'])){
+    controllerSite::redirect($_GET['page']);
+}
+else if (class_exists($controller_class)) {
     if (!is_null(Conf::myGet('action'))) {
         $action = Conf::myGet('action');
         if (!in_array($action, $methode)) {

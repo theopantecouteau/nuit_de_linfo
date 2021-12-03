@@ -1,12 +1,13 @@
 
 footer{
     margin-top: 90px;
-    background: rgba(255, 255, 255, 1);;
+    background: rgba(48, 48, 48, 1);;
     padding-bottom: 35px;
     padding-top: 35px;
+    color: white;
 }
 .sousliste a{
-    color: black;
+    color: white;
 }
 
 .sousliste a:hover{
