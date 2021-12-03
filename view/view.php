@@ -33,22 +33,22 @@
                                 <div class="elementor-widget-container">
                                     <nav migration_allowed="1" migrated="0" role="navigation" class="elementor-nav-menu--main elementor-nav-menu__container elementor-nav-menu--layout-horizontal e--pointer-underline e--animation-fade">
                                         <ul>
-                                            <li class="dropdown"><a href="https://sauveteurdudunkerquois.fr/" aria-current="page" class="elementor-item elementor-item-active">Sauveteurs</a>
+                                            <li class="dropdown"><a href="index.php?controller=sauveteurs&action=sauveteurs" aria-current="page" class="elementor-item elementor-item-active">Sauveteurs</a>
                                                 <ul class="sous">
-                                                    <li><a href="https://sauveteurdudunkerquois.fr/tableau-d-honneur/">Tableau d’honneur</a></li>
-                                                    <li><a href="https://sauveteurdudunkerquois.fr/nos-sauveteurs/" >Qui étaient ils</a></li>
-                                                    <li><a href="https://sauveteurdudunkerquois.fr/les-acteurs/" >Que faisaient ils?</a>
+                                                    <li><a href="index.php?controller=sauveteurs&action=tableau">Tableau d’honneur</a></li>
+                                                    <li><a href="index.php?controller=sauveteurs&action=readAll" >Qui étaient ils</a></li>
+                                                    <li><a href="index.php?controller=sauveteurs&action=acteurs" >Que faisaient ils?</a>
                                                         <ul class="sousdrop">
-                                                            <li class="soussous"><a href="https://sauveteurdudunkerquois.fr/douaniers_sauveteurs-dunkerque/" >Douaniers et sauveteurs</a></li>
-                                                            <li class="soussous"><a href="https://sauveteurdudunkerquois.fr/lamaneur-et-sauveteur/" >Lamaneur et Sauveteur</a></li>
-                                                            <li class="soussous"><a href="https://sauveteurdudunkerquois.fr/1727-2/" >Pilote et Sauveteur</a></li>
-                                                            <li class="soussous"><a href="https://sauveteurdudunkerquois.fr/remorquageetsauvetage/" >Remorquage et Sauvetage</a></li>
-                                                            <li class="soussous"><a href="https://sauveteurdudunkerquois.fr/marins_islandais_sauveteurs/" >Marins islandais et Sauveteurs</a></li>
+                                                            <li class="soussous"><a href="index.php?controller=sauveteurs&action=douaniers" >Douaniers et sauveteurs</a></li>
+                                                            <li class="soussous"><a href="index.php?controller=sauveteurs&action=lamaneurs" >Lamaneur et Sauveteur</a></li>
+                                                            <li class="soussous"><a href="index.php?controller=sauveteurs&action=pilotes" >Pilote et Sauveteur</a></li>
+                                                            <li class="soussous"><a href="index.php?controller=sauveteurs&action=remorquages" >Remorquage et Sauvetage</a></li>
+                                                            <li class="soussous"><a href="index.php?controller=sauveteurs&action=islandais" >Marins islandais et Sauveteurs</a></li>
                                                         </ul>
                                                     </li>
-                                                    <li class="sous"><a href="https://sauveteurdudunkerquois.fr/paroles-de/" >Paroles de</a></li>
-                                                    <li class="sous"><a href="https://sauveteurdudunkerquois.fr/gratifications/" >Gratifications</a></li>
-                                                    <li class="sous"><a href="https://sauveteurdudunkerquois.fr/sauveteurs-dailleurs/">Sauveteurs d’ailleurs</a></li>
+                                                    <li class="sous"><a href="index.php?controller=sauveteurs&action=parole" >Paroles de</a></li>
+                                                    <li class="sous"><a href="index.php?controller=sauveteurs&action=gratification" >Gratifications</a></li>
+                                                    <li class="sous"><a href="index.php?controller=sauveteurs&action=sauveteur">Sauveteurs d’ailleurs</a></li>
                                                 </ul>
                                             </li>
                                             <li class="dropdown"><a href="https://sauveteurdudunkerquois.fr/sorties-en-mer/" class="elementor-item">Sorties en mer</a>
@@ -178,5 +178,45 @@
         require $filepath;
         ?>
     </main>
+<footer>
+    <link href="src/css/footer.css" rel="stylesheet">
+    <div id="containerhaut">
+        <div id="banière">
+        </div>
+    </div>
+    <div id="containerbas">
+        <div id="boxliste">
+            <h2>Liens utiles</h2>
+            <div class="sousliste">
+                <a href="https://theuselessweb.com">Qui sommes nous ?</a>
+            </div>
+            <div class="sousliste">
+                <a href="https://theuselessweb.com">Presse </a>
+            </div>
+            <div class="sousliste">
+                <a href="https://theuselessweb.com">Sites amis </a>
+            </div>
+            <div class="sousliste">
+                <a href="https://theuselessweb.com"> Exprimez vous ! </a>
+            </div>
+        </div>
+        <div id="logo">
+
+        </div>
+        <div id="boxliste2">
+            <h2>Nous contacter</h2>
+            <div class="sousliste">
+                <a> Facebook </a>
+            </div>
+            <div class="sousliste">
+                <a>Twiter </a>
+            </div>
+            <div class="sousliste">
+                <a href="mailto:truc@gmail.com"> Mail </a>
+            </div>
+        </div>
+    </div>
+
+</footer>
 </body>
 </html<

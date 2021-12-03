@@ -1,5 +1,5 @@
 <?php
-require_once File::build_path(array("model","Model.php"));
+require_once File::build_path(array("model","model.php"));
 class modelSaved{
     private $id;
     private $nom;

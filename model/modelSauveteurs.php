@@ -13,7 +13,6 @@ Class modelSauveteurs {
     private $description;
     private $datenaissance;
     private $datemort;
-    private $biographie;
 
     /**
      * @param $id
@@ -22,18 +21,16 @@ Class modelSauveteurs {
      * @param $descriptionbreve
      * @param $datenaissance
      * @param $datemort
-     * @param $biographie
      */
-    public function __construct($id = NULL, $nom = NULL, $prenom = NULL, $descriptionbreve = NULL, $datenaissance = NULL, $datemort = NULL, $biographie = NULL)
+    public function __construct($id =NULL, $nom = NULL, $prenom = NULL, $description = NULL, $datenaissance = NULL, $datemort = NULL)
     {
-        if (!is_null($id) && !is_null($nom) && !is_null($prenom) && !is_null($descriptionbreve) && !is_null($datenaissance) && !is_null($datemort) && !is_null($biographie) ) {
+        if (!is_null($nom) && !is_null($prenom) && !is_null($description)) {
             $this->id = $id;
             $this->nom = $nom;
             $this->prenom = $prenom;
             $this->description = $description;
             $this->datenaissance = $datenaissance;
             $this->datemort = $datemort;
-            $this->biographie = $biographie;
         }
     }
 
@@ -165,22 +162,6 @@ Class modelSauveteurs {
         $this->datemort = $datemort;
     }
 
-    /**
-     * @return mixed
-     */
-    public function getBiographie()
-    {
-        return $this->biographie;
-    }
-
-    /**
-     * @param mixed $biographie
-     */
-    public function setBiographie($biographie)
-    {
-        $this->biographie = $biographie;
-    }
-
     public static function selectAllbyLetter($lettre)
     {
         try {
@@ -212,6 +193,83 @@ Class modelSauveteurs {
             die();
         }
     }
+
+    public function save()
+    {
+        try {
+            $sql = "INSERT INTO Sauveteurs__verifFALSE  (nom, prenom, description, dateNaissance, dateMort) VALUES 
+                    (:nom, :prenom, :description, :dateNaissance, :dateMort)";
+
+            $req_prep = model::getPDO()->prepare($sql);
+            echo($this->nom);
+
+            $values= array(
+                "nom" => $this->nom,
+                "prenom" =>$this->prenom,
+                "description" =>$this->description,
+                "dateNaissance" => $this->datenaissance,
+                "dateMort" => $this->datemort
+            );
+
+            // On donne les valeurs et on exécute la requête
+            $req_prep->execute($values);
+        } catch (PDOException $e) {
+            if (conf::getDebug()) {
+                echo $e->getMessage(); // affiche un message d'erreur
+            } else {
+                echo 'Une erreur est survenue <a href=""> retour a la page d\'accueil </a>';
+            }
+            die();
+        }
+    }
+
+    public static function selectAllbyid($id)
+    {
+        try {
+            $rep = model::getPDO()->query("SELECT  * FROM Sauveteurs__verifTRUE WHERE id=$id");
+            $rep->setFetchMode(PDO::FETCH_CLASS, 'modelSauveteurs');
+            $tab = $rep->fetchAll();
+            return $tab[0];
+        } catch (PDOException $e) {
+            if (conf::getDebug()) {
+                echo $e->getMessage(); // affiche un message d'erreur
+            } else {
+                echo 'Une erreur est survenue <a href=""> retour a la page d\'accueil </a>';
+            }
+            die();
+        }
+    }
+
+    public function saveModif()
+    {
+        try {
+            $sql = "INSERT INTO Sauveteurs__MODIF  (id, nom, prenom, description, dateNaissance, dateMort) VALUES 
+                    (:id, :nom, :prenom, :description, :dateNaissance, :dateMort)";
+
+            $req_prep = model::getPDO()->prepare($sql);
+            echo($this->nom);
+
+            $values= array(
+                "id" => $this->id,
+                "nom" => $this->nom,
+                "prenom" =>$this->prenom,
+                "description" =>$this->description,
+                "dateNaissance" => $this->datenaissance,
+                "dateMort" => $this->datemort
+            );
+
+            // On donne les valeurs et on exécute la requête
+            $req_prep->execute($values);
+        } catch (PDOException $e) {
+            if (conf::getDebug()) {
+                echo $e->getMessage(); // affiche un message d'erreur
+            } else {
+                echo 'Une erreur est survenue <a href=""> retour a la page d\'accueil </a>';
+            }
+            die();
+        }
+    }
+
 
 
 }
