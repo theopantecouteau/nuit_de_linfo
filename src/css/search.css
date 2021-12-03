@@ -1,12 +1,16 @@
 #searchForm{
+
+    margin-right: 10%;
+    margin-left: 10%;
     margin-bottom : 90px;
     border : none;
     border-radius: 25px;
-    text-align: right;
 
 }
-.searchDiv{
-    text-align: right;
+searchDiv{
+
+
+
 }
 
 #searchBar{
@@ -16,6 +20,7 @@
     border-radius: 25px;
     width: 20%;
     right: 0;
+
 
 }
 

@@ -21,10 +21,11 @@ searchDiv{
     width: 20%;
     right: 0;
 
+
 }
 
 #searchBar legend{
     background-color: rgba(48, 48, 48, 0.85);
     border-radius: 25px;
-    color: black;
+    color: white;
 }

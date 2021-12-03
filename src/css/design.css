@@ -7,6 +7,8 @@ body {
     background-attachment: fixed;
     background-size:cover;
     margin: 0px;
+    background-blend-mode: darken;
+    backdrop-filter: blur(3px);
 
 }
 
