@@ -378,7 +378,7 @@
         <div id="boxliste">
             <h2>Liens utiles</h2>
             <div class="sousliste">
-                <a href="https://theuselessweb.com">Qui sommes nous ?</a>
+                <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Qui sommes nous ?</a>
             </div>
             <div class="sousliste">
                 <a href="https://theuselessweb.com">Presse </a>
@@ -409,4 +409,4 @@
 
 </footer>
 </body>
-</html<
+</html>
