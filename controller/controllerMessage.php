@@ -20,10 +20,11 @@ class controllerMessage{
     }
 
     public static function created(){
-        $id = conf::myGet('prenom');
+        $pseudo = conf::myGet('prenom');
         $message = conf::myGet('message');
         $image = conf::myGet('image');
-        $m1 = new modelMessage($id, $message, $image);
+        $m1 = new modelMessage(NULL, $pseudo, $message, $image);
+        var_dump($m1);
         $m1->save();
         controllerMessage::readAll();
 
