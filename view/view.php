@@ -62,29 +62,29 @@
                         <a href="?controller=site&action=register&page=dix_huit" class="button sub1_button">
                             <div class="button_div">18ème siècle</div>
                         </a>
-                        <a href="?controller=site&action=register&page=" class="button sub1_button">
+                        <a href="?controller=site&action=register&page=19s" class="button sub1_button">
                             <div class="divparent2">
                                 <div class="button_div sub2_button_div">19ème siècle</div>
                                 <div class="sub2">
-                                    <a href="?controller=site&action=register&page=" class="button sub2_button">
+                                    <a href="?controller=site&action=register&page=1800-1824" class="button sub2_button">
                                         <div class="button_div">1800-1824</div>
                                     </a>
-                                    <a href="?controller=site&action=register&page=" class="button sub2_button">
+                                    <a href="?controller=site&action=register&page=1825-1849" class="button sub2_button">
                                         <div class="button_div">1825-1849</div>
                                     </a>
-                                    <a href="?controller=site&action=register&page=" class="button sub2_button">
+                                    <a href="?controller=site&action=register&page=1850-1859" class="button sub2_button">
                                         <div class="button_div">1850-1859</div>
                                     </a>
-                                    <a href="?controller=site&action=register&page=" class="button sub2_button">
+                                    <a href="?controller=site&action=register&page=1860-1869" class="button sub2_button">
                                         <div class="button_div">1860-1869</div>
                                     </a>
-                                    <a href="?controller=site&action=register&page=" class="button sub2_button">
+                                    <a href="?controller=site&action=register&page=1870-1879" class="button sub2_button">
                                         <div class="button_div">1870-1879</div>
                                     </a>
-                                    <a href="?controller=site&action=register&page=" class="button sub2_button">
+                                    <a href="?controller=site&action=register&page=1880-1889" class="button sub2_button">
                                         <div class="button_div">1880-1889</div>
                                     </a>
-                                    <a href="?controller=site&action=register&page=" class="button sub2_button">
+                                    <a href="?controller=site&action=register&page=1890-1899" class="button sub2_button">
                                         <div class="button_div">1890-1899</div>
                                     </a>
                                 </div>
@@ -94,53 +94,53 @@
                             <div class="divparent2">
                                 <div class="button_div sub2_button_div">20ème siècle</div>
                                 <div class="sub2">
-                                    <a href="?controller=site&action=register&page=" class="button sub2_button">
+                                    <a href="?controller=site&action=register&page=1900-1909" class="button sub2_button">
                                         <div class="button_div">1900-1909</div>
                                     </a>
-                                    <a href="?controller=site&action=register&page=" class="button sub2_button">
+                                    <a href="?controller=site&action=register&page=1910-1919" class="button sub2_button">
                                         <div class="button_div">1910-1919</div>
                                     </a>
-                                    <a href="?controller=site&action=register&page=" class="button sub2_button">
+                                    <a href="?controller=site&action=register&page=1920-1929" class="button sub2_button">
                                         <div class="button_div">1920-1929</div>
                                     </a>
-                                    <a href="?controller=site&action=register&page=" class="button sub2_button">
+                                    <a href="?controller=site&action=register&page=1930-1939" class="button sub2_button">
                                         <div class="button_div">1930-1939</div>
                                     </a>
-                                    <a href="?controller=site&action=register&page=" class="button sub2_button">
+                                    <a href="?controller=site&action=register&page=1940-1949" class="button sub2_button">
                                         <div class="button_div">1940-1949</div>
                                     </a>
-                                    <a href="?controller=site&action=register&page=" class="button sub2_button">
+                                    <a href="?controller=site&action=register&page=batailledunkerque" class="button sub2_button">
                                         <div class="button_div">Bataille de Dunkerque</div>
                                     </a>
-                                    <a href="?controller=site&action=register&page=" class="button sub2_button">
+                                    <a href="?controller=site&action=register&page=1950-1959" class="button sub2_button">
                                         <div class="button_div">1950-1959</div>
                                     </a>
-                                    <a href="?controller=site&action=register&page=" class="button sub2_button">
+                                    <a href="?controller=site&action=register&page=1960-1969" class="button sub2_button">
                                         <div class="button_div">1960-1969</div>
                                     </a>
-                                    <a href="?controller=site&action=register&page=" class="button sub2_button">
+                                    <a href="?controller=site&action=register&page=1970-1979" class="button sub2_button">
                                         <div class="button_div">1970-1979</div>
                                     </a>
-                                    <a href="?controller=site&action=register&page=" class="button sub2_button">
+                                    <a href="?controller=site&action=register&page=1980-1989" class="button sub2_button">
                                         <div class="button_div">1980-1989</div>
                                     </a>
-                                    <a href="?controller=site&action=register&page=" class="button sub2_button">
+                                    <a href="?controller=site&action=register&page=1990-1999" class="button sub2_button">
                                         <div class="button_div">1990-1999</div>
                                     </a>
                                 </div>
                             </div>
                         </a>
-                        <a href="?controller=site&action=register&page=" class="button sub1_button">
+                        <a href="?controller=site&action=register&page=20s" class="button sub1_button">
                             <div class="divparent2">
                                 <div class="button_div sub2_button_div">SNSM 21ème siècle</div>
                                 <div class="sub2">
-                                    <a href="?controller=site&action=register&page=" class="button sub2_button">
+                                    <a href="?controller=site&action=register&page=2000-2009" class="button sub2_button">
                                         <div class="button_div">SNSM 2000-2009</div>
                                     </a>
-                                    <a href="?controller=site&action=register&page=" class="button sub2_button">
+                                    <a href="?controller=site&action=register&page=2010-2019" class="button sub2_button">
                                         <div class="button_div">SNSM 2010-2019</div>
                                     </a>
-                                    <a href="?controller=site&action=register&page=" class="button sub2_button">
+                                    <a href="?controller=site&action=register&page=2020-2029" class="button sub2_button">
                                         <div class="button_div">SNSM 2020-2029</div>
                                     </a>
                                 </div>
