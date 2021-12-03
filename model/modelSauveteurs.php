@@ -165,7 +165,23 @@ Class modelSauveteurs {
     public static function selectAllbyLetter($lettre)
     {
         try {
-            $rep = model::getPDO()->query("SELECT DISTINCT nom FROM Sauveteurs__verifTRUE WHERE nom LIKE '$lettre%'");
+            $rep = model::getPDO()->query("SELECT nom, id FROM Sauveteurs__verifTRUE WHERE nom LIKE '%$lettre%'");
+            $rep->setFetchMode(PDO::FETCH_CLASS, 'modelSauveteurs');
+            return $tab = $rep->fetchAll();
+        } catch (PDOException $e) {
+            if (conf::getDebug()) {
+                echo $e->getMessage(); // affiche un message d'erreur
+            } else {
+                echo 'Une erreur est survenue <a href=""> retour a la page d\'accueil </a>';
+            }
+            die();
+        }
+    }
+
+    public static function selectAllbyid($id)
+    {
+        try {
+            $rep = model::getPDO()->query("SELECT * FROM Sauveteurs__verifTRUE WHERE id = $id");
             $rep->setFetchMode(PDO::FETCH_CLASS, 'modelSauveteurs');
             return $tab = $rep->fetchAll();
         } catch (PDOException $e) {
@@ -223,22 +239,6 @@ Class modelSauveteurs {
         }
     }
 
-    public static function selectAllbyid($id)
-    {
-        try {
-            $rep = model::getPDO()->query("SELECT  * FROM Sauveteurs__verifTRUE WHERE id=$id");
-            $rep->setFetchMode(PDO::FETCH_CLASS, 'modelSauveteurs');
-            $tab = $rep->fetchAll();
-            return $tab[0];
-        } catch (PDOException $e) {
-            if (conf::getDebug()) {
-                echo $e->getMessage(); // affiche un message d'erreur
-            } else {
-                echo 'Une erreur est survenue <a href=""> retour a la page d\'accueil </a>';
-            }
-            die();
-        }
-    }
 
     public function saveModif()
     {
