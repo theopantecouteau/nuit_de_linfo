@@ -1,17 +1,11 @@
 <?php
 class controllerSite{
 
+    protected static $object = 'Pages';
 
     public static function redirect($page){
-        $controller = 'pages';
+        $view = $page.'.php';
         $pagetitle = ucwords($page);
-        controllerSite::template($controller, $page, $pagetitle);
-    }
-
-    public static function template($controleur, $vue, $titre){
-        $controller = $controleur;
-        $view = $vue;
-        $pagetitle = $titre;
         require File::build_path(array("view", "view.php"));
     }
 }

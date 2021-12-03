@@ -53,7 +53,7 @@
                                             </li>
                                             <li class="dropdown"><a href="https://sauveteurdudunkerquois.fr/sorties-en-mer/" class="elementor-item">Sorties en mer</a>
                                                 <ul class="sous">
-                                                    <li><a href="index.php?controller=sortie&action=dix_huit_siecle" class="elementor-sub-item">18ème siècle</a></li>
+                                                    <li><a href="index.php?controller=site&action=redirect&page=dix_huit" class="elementor-sub-item">18ème siècle</a></li>
                                                     <li><a href="https://sauveteurdudunkerquois.fr/19eme-siecle/" class="elementor-sub-item">19ème siècle</a>
                                                         <ul class="sousdrop">
                                                             <li class="soussous"><a href="https://sauveteurdudunkerquois.fr/1800-1824/" >1800 – 1824</a></li>
