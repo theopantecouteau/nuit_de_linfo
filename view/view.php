@@ -55,7 +55,7 @@
                     </div>
                 </div>
             </a>
-            <a href="?controller=site&action=register&page=" class="button">
+            <a href="?controller=site&action=register&page=sorties_en_mer" class="button">
                 <div class="divparent1">
                     <div class="button_div">Sorties en mer</div>
                     <div class="sub1">
@@ -171,7 +171,7 @@
                     </div>
                 </div>
             </a>
-            <a href="?controller=site&action=register&page=" class="button">
+            <a href="?controller=site&action=register&page=services_du_port" class="button">
                 <div class="divparent1">
                     <div class="button_div">Services du port</div>
                     <div class="sub1">
