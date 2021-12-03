@@ -54,7 +54,7 @@ class modelSaved{
     public static function getAllbyLetter($lettre)
     {
         try {
-            $rep = model::getPDO()->query("SELECT DISTINCT nom FROM PersonnesSecourus__VERIF WHERE nom LIKE '$lettre%'");
+            $rep = model::getPDO()->query("SELECT DISTINCT * FROM PersonnesSecourus__VERIF WHERE nom LIKE '%$lettre%'");
             $rep->setFetchMode(PDO::FETCH_CLASS, 'modelSaved');
             return $tab = $rep->fetchAll();
         } catch (PDOException $e) {

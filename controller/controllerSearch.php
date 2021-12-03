@@ -1,17 +1,20 @@
 <?php
 
-require file::build_path(array("model", "modelSearch.php"));
+require_once file::build_path(array("model", "modelBateau.php"));
+require_once file::build_path(array("model", "modelSauveteurs.php"));
+require_once file::build_path(array("model", "modelSaved.php"));
 
-Class controllerSearch extends modelSearch {
+
+Class controllerSearch {
 
     protected static $object='Search';
 
     public function searched(){
         $letter = conf::myGet('search');
         echo ($letter);
-        $p=modelSearch::searchSauveteur($letter);
-        $c= modelSearch::searchBateau($letter);
-        $d = modelSearch::searchSauve($letter);
+        $p=modelSauveteurs::selectAllbyLetter($letter);
+        $c= modelBateau::selectAllbyLetter($letter);
+        //$d= modelSaved::getAllbyLetter($letter);
         $view="search.php";
         $pagetitle="Votre recherche";
         require file::build_path(array("view", "view.php"));
