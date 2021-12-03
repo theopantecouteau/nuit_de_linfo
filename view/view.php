@@ -159,13 +159,13 @@
                         <a href="?controller=site&action=register&page=gravelines" class="button sub1_button">
                             <div class="button_div">Gravelines</div>
                         </a>
-                        <a href="?controller=site&action=register&page=formardick" class="button sub1_button">
+                        <a href="?controller=site&action=register&page=fort_mardyck" class="button sub1_button">
                             <div class="button_div">Fort-Mardyck</div>
                         </a>
-                        <a href="?controller=site&action=register&page=malo" class="button sub1_button">
+                        <a href="?controller=site&action=register&page=malo_les_bains" class="button sub1_button">
                             <div class="button_div">Malo-les-Bains</div>
                         </a>
-                        <a href="?controller=site&action=register&page=braydunes" class="button sub1_button">
+                        <a href="?controller=site&action=register&page=bray_dunes" class="button sub1_button">
                             <div class="button_div">Bray-Dunes</div>
                         </a>
                     </div>
