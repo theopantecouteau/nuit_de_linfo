@@ -2,8 +2,8 @@
 <html class="html" lang="fr-FR">
 <head>
     <meta charset="UTF-8">
-    <link href="src/css/design.css" rel="stylesheet">
-    <link href="src/css/header.css" rel="stylesheet">
+    <link href="src/css/designDark.css" rel="stylesheet">
+    <link href="src/css/headerDark.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
 </head>
@@ -338,7 +338,7 @@
         ?>
     </main>
 <footer>
-    <link href="src/css/footer.css" rel="stylesheet">
+    <link href="src/css/footerDark.css" rel="stylesheet">
     <div id="containerhaut">
         <div id="banière">
         </div>
