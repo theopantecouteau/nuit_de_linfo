@@ -114,9 +114,9 @@
                                             </li>
                                             <li class="dropdown"><a href="https://sauveteurdudunkerquois.fr/moyens-maritimes/">Moyens maritimes</a>
                                                 <ul class="sous">
-                                                    <li><a href="https://sauveteurdudunkerquois.fr/les-12-canots-dunkerquois/" >Les canots dunkerquois</a></li>
-                                                    <li><a href="https://sauveteurdudunkerquois.fr/canots-fort-mardyckois/" >Canots fort-mardyckois</a></li>
-                                                    <li><a href="https://sauveteurdudunkerquois.fr/les-canots-gravelinois/">Les canots gravelinois</a></li>
+                                                    <li><a href="index.php?action=readDunkerque&controller=moyens" >Les canots dunkerquois</a></li>
+                                                    <li><a href="index.php?action=readFort&controller=moyens" >Canots fort-mardyckois</a></li>
+                                                    <li><a href="index.php?action=readGravel&controller=moyens">Les canots gravelinois</a></li>
                                                     <li><a href="https://sauveteurdudunkerquois.fr/canot-de-malo-les-bains/">Canot Malo-les-Bains</a></li>
                                                     <li><a href="https://sauveteurdudunkerquois.fr/bateaux-pilotes/">Pilotage les moyens maritimes</a></li>
                                                     <li><a href="https://sauveteurdudunkerquois.fr/remorqueurs-dunkerquois/">Remorqueurs dunkerquois</a></li>
