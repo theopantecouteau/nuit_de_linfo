@@ -8,4 +8,16 @@ class controllerSite{
         $pagetitle = ucwords($page);
         require File::build_path(array("view", "view.php"));
     }
+
+    public static function setDark(){
+        $_SESSION['colormode'] = 'dark';
+        $view="19s.php";
+        require file::build_path(array("view","view.php"));
+    }
+
+    public static function setLight(){
+        $_SESSION['colormode'] = 'light';
+        $view="19s.php";
+        require file::build_path(array("view","view.php"));
+    }
 }
