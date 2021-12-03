@@ -1,0 +1,53 @@
+
+footer{
+    margin-top: 90px;
+    background: rgba(48, 48, 48, 1);;
+    padding-bottom: 35px;
+    padding-top: 35px;
+    color: white;
+}
+.sousliste a{
+    color: white;
+}
+
+.sousliste a:hover{
+    color: cadetblue;
+}
+
+#boxliste{
+    font-family: 'MyWebFont', Arial;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30%;
+}
+#boxliste2{
+    font-family: 'MyWebFont', Arial;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30%;
+}
+
+#logo{
+    width: 200px;
+    height: 200px;
+    background-image: url("https://sauveteurdudunkerquois.fr/wp-content/uploads/2021/09/SNSM.png");
+    background-position:center;
+    background-repeat: no-repeat;
+    margin-bottom: 10px;
+
+}
+
+
+#containerbas{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+
+
