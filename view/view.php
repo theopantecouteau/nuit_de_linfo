@@ -207,13 +207,13 @@
                 <div class="divparent1">
                     <div class="button_div">Moyens Maritimes</div>
                     <div class="sub1">
-                        <a href="" class="button sub1_button">
+                        <a href="index.php?action=readDunkerque&controller=moyens" class="button sub1_button">
                             <div class="button_div">Les canots dunkerquois</div>
                         </a>
-                        <a href="" class="button sub1_button">
+                        <a href="index.php?action=readFort&controller=moyens" class="button sub1_button">
                             <div class="button_div">Canots fort-mardyckois</div>
                         </a>
-                        <a href="" class="button sub1_button">
+                        <a href="index.php?action=readGravel&controller=moyens" class="button sub1_button">
                             <div class="button_div">Les canots gravelinois</div>
                         </a>
                         <a href="" class="button sub1_button">
