@@ -102,6 +102,7 @@ Class controllerSauveteurs extends modelSauveteurs {
         $description="";
         $dateNaissance="";
         $dateMort="";
+        $id="";
         $bouton= "Créer";
         $pagetitle="Ajouter un sauveteur";
         require file::build_path(array("view", "view.php"));
@@ -112,6 +113,7 @@ Class controllerSauveteurs extends modelSauveteurs {
         $actionFormulaire="createdModif";
         $view="create.php";
         $pagetitle="Modifier des informations";
+        $id="{$p->getId()}";
         $nom ="{$p->getNom()}";
         $prenom="{$p->getPrenom()}";
         $description="{$p->getDescription()}";
@@ -125,8 +127,9 @@ Class controllerSauveteurs extends modelSauveteurs {
     public function createdModif(){
         $pagetitle = "Demande de vérification en cours";
         $view = "created.php";
-        $p = new modelSauveteurs(conf::myGet('nom'), conf::myGet('prenom'), conf::myGet('description'), conf::myGet('naissance'), conf::myGet('mort'));
-
+        echo(conf::myGet('id'));
+        $p = new modelSauveteurs(conf::myGet('id'), conf::myGet('nom'), conf::myGet('prenom'), conf::myGet('description'), conf::myGet('naissance'), conf::myGet('mort'));
+        var_dump($p);
         $p->saveModif();
         require file::build_path(array("view", "view.php"));
     }

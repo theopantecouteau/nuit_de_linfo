@@ -3,6 +3,10 @@
         <legend>Créer un sauveteur</legend>
 
         <p>
+            <label for="idId">Id</label> :
+            <input type="number" value="<?php echo $id; ?>" name="id" for="idId" required>
+        </p>
+        <p>
             <label for="idNom">Nom</label> :
             <input type="text" value="<?php echo $nom; ?>" name="nom" id="idNom" required />
         </p>

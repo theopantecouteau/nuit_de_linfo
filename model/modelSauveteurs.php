@@ -22,10 +22,10 @@ Class modelSauveteurs {
      * @param $datenaissance
      * @param $datemort
      */
-    public function __construct($nom = NULL, $prenom = NULL, $description = NULL, $datenaissance = NULL, $datemort = NULL)
+    public function __construct($id =NULL, $nom = NULL, $prenom = NULL, $description = NULL, $datenaissance = NULL, $datemort = NULL)
     {
         if (!is_null($nom) && !is_null($prenom) && !is_null($description)) {
-            $this->id = NULL;
+            $this->id = $id;
             $this->nom = $nom;
             $this->prenom = $prenom;
             $this->description = $description;
@@ -243,13 +243,14 @@ Class modelSauveteurs {
     public function saveModif()
     {
         try {
-            $sql = "INSERT INTO Sauveteurs__MODIF  (nom, prenom, description, dateNaissance, dateMort) VALUES 
-                    (:nom, :prenom, :description, :dateNaissance, :dateMort)";
+            $sql = "INSERT INTO Sauveteurs__MODIF  (id, nom, prenom, description, dateNaissance, dateMort) VALUES 
+                    (:id, :nom, :prenom, :description, :dateNaissance, :dateMort)";
 
             $req_prep = model::getPDO()->prepare($sql);
             echo($this->nom);
 
             $values= array(
+                "id" => $this->id,
                 "nom" => $this->nom,
                 "prenom" =>$this->prenom,
                 "description" =>$this->description,
