@@ -2,10 +2,18 @@
 <html class="html" lang="fr-FR">
 <head>
     <meta charset="UTF-8">
-    <link href="src/css/designDark.css" rel="stylesheet">
-    <link href="src/css/headerDark.css" rel="stylesheet">
-    <link href="src/css/searchDark.css" rel="stylesheet">
-    <link href="src/css/messages.css" rel="stylesheet">
+    <?php
+    if ($_SESSION['colormode'] == 'dark'){
+        echo '<link href="src/css/designDark.css" rel="stylesheet">';
+        echo '<link href="src/css/headerDark.css" rel="stylesheet">';
+        echo '<link href="src/css/searchDark.css" rel="stylesheet">';
+    } else {
+        echo '<link href="src/css/design.css" rel="stylesheet">';
+        echo '<link href="src/css/header.css" rel="stylesheet">';
+        echo '<link href="src/css/search.css" rel="stylesheet">';
+    }
+    ?>
+    <link href="src/css/search.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
 </head>
@@ -321,37 +329,31 @@
             <a href="?controller=site&action=register&page=" class="button">
                 <div class="button_div">Estaminet</div>
             </a>
-            <a href="index.php?controller=message&action=readAll" class="button">
-                <div class="divparent1">
-                    <div class="button_div">Meilleurs Voeux !</div>
-                    <div class="sub1">
-                        <a href="index.php?controller=message&action=create" class="button sub1_button">
-                            <div class="button_div">Envoyer un message</div>
-                        </a>
-                    </div>
-            </a>
+            <div >
+                <?php
+                if ($_SESSION["colormode"] == 'dark'){
+                    echo '<a href="?controller=site&action=setLight"><img style="width: 30px; height: auto;" src="https://icones.pro/wp-content/uploads/2021/04/icone-de-soleil-noir.png"></a>';
+                } else {
+                    echo '<a href="?controller=site&action=setDark"><img style="width: 30px; height: auto;" src="https://svgsilh.com/svg/307307.svg"></a>';
+                }
+                ?>
+
+            </div>
         </div>
 
-        <div >
-        <a href=""><img style="width: 100px; height: auto;" src="https://svgsilh.com/svg/307307.svg"></a>
-        </div>
     </div>
 </header>
-
+    <div id="searchDiv">
         <form method=post id="searchForm" action="index.php?controller=search&action=searched">
-            <div id="searchDiv">
             <fieldset id="searchBar">
                 <legend>Rechercher</legend>
                 <p>
-                    <label>
-                        <input type="text"  name="search"  required />
-                    </label>
+                    <input type="text"  name="search"  required />
                     <input type="submit" value="Rechercher" />
                 </p>
             </fieldset>
-            </div>
         </form>
-
+    </div>
 
 
 

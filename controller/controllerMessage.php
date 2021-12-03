@@ -24,7 +24,6 @@ class controllerMessage{
         $message = conf::myGet('message');
         $image = conf::myGet('image');
         $m1 = new modelMessage(NULL, $pseudo, $message, $image);
-        var_dump($m1);
         $m1->save();
         controllerMessage::readAll();
 
