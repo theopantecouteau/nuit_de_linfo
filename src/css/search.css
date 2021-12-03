@@ -1,0 +1,30 @@
+#searchForm{
+
+    margin-right: 10%;
+    margin-left: 10%;
+    margin-bottom : 90px;
+    border : none;
+    border-radius: 25px;
+
+}
+searchDiv{
+
+
+
+}
+
+#searchBar{
+    border: none;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.85);
+    border-radius: 25px;
+    width: 20%;
+    right: 0;
+
+}
+
+#searchBar legend{
+    background-color: rgba(255, 255, 255, 1);
+    border-radius: 25px;
+    color: black;
+}

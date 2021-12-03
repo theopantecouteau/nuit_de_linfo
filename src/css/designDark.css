@@ -7,6 +7,7 @@ body {
     background-size:cover;
     margin: 0px;
     background-blend-mode: darken;
+    backdrop-filter: blur(3px);
 }
 
 main{
@@ -25,5 +26,9 @@ main{
 
 main > img{
     align-items: center;
+}
+
+a{
+    color: #6EC1E4;
 }
 

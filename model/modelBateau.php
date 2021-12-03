@@ -485,7 +485,9 @@ class modelBateau extends model{
         }
     }
 
-    public function save($data)
+
+
+    public function saveMod($data)
     {
         $table_name = 'Bateau__PASVERIF';
         $primary_key = static::$primary;

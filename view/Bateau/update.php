@@ -37,7 +37,9 @@ echo "<label for=\"bateau_id\">ID bateau</label> :
       <label for=\"moteur_id\">Moteurs : </label>
       <input type=\"text\" value=\"$bMoteurs\" name=\"moteurs\" id=\"moteur_id\" required/>
       <label for=\"tirantdo_id\">Tirant d'eau jspquoi</label>
-      <input type=\"text\" value=\"$bTirant\" name=\"tirantdeau\" id=\"tirantdo_id\" required/>";
+      <input type=\"text\" value=\"$bTirant\" name=\"tirantdeau\" id=\"tirantdo_id\" required/>
+      <label for=\"idmoyen_id\">id moyen</label>
+      <input type=\"text\" value=\"\" name=\"idMoyen\" id=\"idmoyen_id\" required/>";
 ?>
 </p>
 <p>
