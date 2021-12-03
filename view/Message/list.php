@@ -6,5 +6,6 @@ foreach ($tab_v as $mess){
     echo $mess->getMessage();
     echo "<br>";
     echo "<br>";
-
+    echo "<br>";
+    echo "<br>";
 }

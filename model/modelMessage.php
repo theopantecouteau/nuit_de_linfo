@@ -57,7 +57,7 @@ class modelMessage{
     }
 
     public static function getAllMessages(){
-        $rep = Model::getPDO()->query("SELECT * FROM __Messages__");
+        $rep = Model::getPDO()->query("SELECT * FROM __Messages__ ORDER BY id DESC");
         $rep->setFetchMode(PDO::FETCH_CLASS, 'modelMessage');
         return $tab_msg = $rep->fetchAll();
     }
