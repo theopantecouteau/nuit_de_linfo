@@ -107,8 +107,8 @@ class controllerBateau
             'dimensions'=>$_POST['dimensions'], 'histoire'=> $_POST['histoire'], 'typebateau'=>$_POST['typebateau'], 'finService'=>$_POST['finService'],
             'numcoque'=>$_POST['numcoque'], 'poids'=>$_POST['poids'], 'vitesse'=>$_POST['vitesse'],'moteurs'=> $_POST['moteurs']
             , 'tailletirandeau'=>$_POST['tirantdeau'], 'nomdonnedate'=> $_POST['nomdonnedate'], 'idMoyen' => $_POST['idMoyen']];
-        modelBateau::update($data);
-        $tab_p = ModelProduit::selectAll();
+        modelBateau::saveMod($data);
+        $tab_p = modelBateau::selectAll();
         $view = 'updated.php';
         $pagetitle = 'Bateau mis à jour';
         require file::build_path(array('view', 'view.php'));
