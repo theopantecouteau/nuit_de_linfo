@@ -5,6 +5,7 @@
     <link href="src/css/designDark.css" rel="stylesheet">
     <link href="src/css/headerDark.css" rel="stylesheet">
     <link href="src/css/searchDark.css" rel="stylesheet">
+    <link href="src/css/messages.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
 </head>
