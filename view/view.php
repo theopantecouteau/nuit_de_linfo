@@ -9,7 +9,7 @@
         echo '<link href="src/css/searchDark.css" rel="stylesheet">';
         echo '<link href="src/css/footerDark.css" rel="stylesheet">';
 
-    } else {
+    } else if (isset($_SESSION) && $_SESSION['colormode'] == 'light'){
         echo '<link href="src/css/design.css" rel="stylesheet">';
         echo '<link href="src/css/header.css" rel="stylesheet">';
         echo '<link href="src/css/search.css" rel="stylesheet">';
@@ -331,6 +331,16 @@
             </a>
             <a href="?controller=site&action=register&page=" class="button">
                 <div class="button_div">Estaminet</div>
+            </a>
+            <a href="index.php?controller=message&action=readAll" class="button">
+                <div class="divparent1">
+                    <div class="button_div">Meilleurs voeux !</div>
+                    <div class="sub1">
+                        <a href="index.php?controller=message&action=create" class="button sub2_button">
+                            <div class="button_div">Envoyez un message</div>
+                        </a>
+                    </div>
+                </div>
             </a>
             <div >
                 <?php
