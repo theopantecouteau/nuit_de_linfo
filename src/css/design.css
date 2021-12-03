@@ -1,8 +1,10 @@
 body {
-
+    background-image: url("../images/fond.png");
     font-family: 'Montserrat', sans-serif;
-
-
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size:cover;
     margin: 0px;
 }
 
@@ -11,14 +13,12 @@ main{
     align-content: center;
     margin-left: 10% ;
     margin-right: 10%;
-    background-color: rgba(255, 255, 255, 0.7);
+    background-color: rgba(255, 255, 255, 0.85);
     padding: 30px;
     border-radius: 25px;
 }
 
-main > img{
-    align-items: center;
-}
+
 
 main > img{
     align-items: center;
