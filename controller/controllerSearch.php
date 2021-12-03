@@ -10,9 +10,15 @@ Class controllerSearch {
     protected static $object='Search';
 
     public function searched(){
+        if (conf::myGet('search') == "oeuf"){
+            $view = "oeuf.php";
+            $pagetitle="Bravo, vous avez trouvé l'oeuf";
+            require file::build_path(array("view", "view.php"));
+        }
         $letter = conf::myGet('search');
         $p=modelSauveteurs::selectAllbyLetter($letter);
         $c= modelBateau::selectAllbyLetter($letter);
+
         //$d= modelSaved::getAllbyLetter($letter);
         $view="search.php";
         $pagetitle="Votre recherche";
