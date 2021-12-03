@@ -15,12 +15,13 @@ Class controllerSearch {
             $view="oeuf.php";
             $pagetitle="Bravo !";
             require file::build_path(array("view", "view.php"));
+        } else {
+            $p = modelSauveteurs::selectAllbyLetter($letter);
+            $c = modelBateau::selectAllbyLetter($letter);
+            //$d= modelSaved::getAllbyLetter($letter);
+            $view = "search.php";
+            $pagetitle = "Votre recherche";
+            require file::build_path(array("view", "view.php"));
         }
-        $p=modelSauveteurs::selectAllbyLetter($letter);
-        $c= modelBateau::selectAllbyLetter($letter);
-        //$d= modelSaved::getAllbyLetter($letter);
-        $view="search.php";
-        $pagetitle="Votre recherche";
-        require file::build_path(array("view", "view.php"));
     }
 }
