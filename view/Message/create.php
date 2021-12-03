@@ -5,7 +5,7 @@
             <legend>Mon formulaire :</legend>
             <p>
             <div id="gauche">
-                <label  for="Id_id" class="form-label">prenom</label> :
+                <label  for="Id_id" class="form-label">Prénom</label> :
                 <input type="text" placeholder="entrez votre nom" class="form-control" name="prenom" id="Id_id" required/>
             </div>
 

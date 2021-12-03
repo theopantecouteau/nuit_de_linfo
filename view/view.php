@@ -342,7 +342,9 @@
             <fieldset id="searchBar">
                 <legend>Rechercher</legend>
                 <p>
-                    <input type="text"  name="search"  required />
+                    <label>
+                        <input type="text"  name="search"  required />
+                    </label>
                     <input type="submit" value="Rechercher" />
                 </p>
             </fieldset>
