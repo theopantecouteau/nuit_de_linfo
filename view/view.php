@@ -11,45 +11,45 @@
 <header>
    <div id="headbar">
        <div id="menu">
-           <a href="" class="button">
+           <a href="index.php?controller=sauveteurs&action=sauveteurs" class="button">
                <div class="divparent1">
                <div class="button_div">Sauveteurs</div>
                <div class="sub1">
-                   <a href="" class="button sub1_button">
+                   <a href="index.php?controller=sauveteurs&action=tableau" class="button sub1_button">
                        <div class="button_div">Tableau d'honneur</div>
                    </a>
-                   <a href="" class="button sub1_button">
+                   <a href="index.php?controller=sauveteurs&action=readAll" class="button sub1_button">
                        <div class="button_div">Qui étaient-ils ?</div>
                    </a>
-                   <a href="" class="button sub1_button">
+                   <a href="index.php?controller=sauveteurs&action=acteurs" class="button sub1_button">
                        <div class="divparent2">
                        <div class="button_div sub2_button_div">Que faisaient-ils ?</div>
                        <div class="sub2">
-                           <a href="" class="button sub2_button">
+                           <a href="index.php?controller=sauveteurs&action=douaniers" class="button sub2_button">
                                <div class="button_div">Douaniers et sauveteurs</div>
                            </a>
-                           <a href="" class="button sub2_button">
+                           <a href="index.php?controller=sauveteurs&action=lamaneurs" class="button sub2_button">
                                <div class="button_div">Lamaneur et Sauveteur</div>
                            </a>
-                           <a href="" class="button sub2_button">
+                           <a href="index.php?controller=sauveteurs&action=pilotes" class="button sub2_button">
                                <div class="button_div">Pilote et Sauveteur</div>
                            </a>
-                           <a href="" class="button sub2_button">
+                           <a href="index.php?controller=sauveteurs&action=remorquages" class="button sub2_button">
                                <div class="button_div">Remorquage et Sauvetage</div>
                            </a>
-                           <a href="" class="button sub2_button">
+                           <a href="index.php?controller=sauveteurs&action=islandais" class="button sub2_button">
                                <div class="button_div">Marins islandais et Sauveteurs</div>
                            </a>
                        </div>
                        </div>
                    </a>
-                   <a href="" class="button sub1_button">
+                   <a href="index.php?controller=sauveteurs&action=parole" class="button sub1_button">
                        <div class="button_div">Paroles de</div>
                    </a>
-                   <a href="" class="button sub1_button">
+                   <a href="index.php?controller=sauveteurs&action=gratification" class="button sub1_button">
                        <div class="button_div">Gratifications</div>
                    </a>
-                   <a href="" class="button sub1_button">
+                   <a href="index.php?controller=sauveteurs&action=sauveteur" class="button sub1_button">
                        <div class="button_div">Sauveteurs d'ailleurs</div>
                    </a>
                </div>
@@ -153,19 +153,19 @@
                <div class="divparent1">
                <div class="button_div">Stations</div>
                <div class="sub1">
-                   <a href="?controller=site&action=register&page=" class="button sub1_button">
+                   <a href="?controller=site&action=register&page=dunkerque" class="button sub1_button">
                        <div class="button_div">Dunkerque</div>
                    </a>
-                   <a href="?controller=site&action=register&page=" class="button sub1_button">
+                   <a href="?controller=site&action=register&page=gravelines" class="button sub1_button">
                        <div class="button_div">Gravelines</div>
                    </a>
-                   <a href="?controller=site&action=register&page=" class="button sub1_button">
+                   <a href="?controller=site&action=register&page=formardick" class="button sub1_button">
                        <div class="button_div">Fort-Mardyck</div>
                    </a>
-                   <a href="?controller=site&action=register&page=" class="button sub1_button">
+                   <a href="?controller=site&action=register&page=malo" class="button sub1_button">
                        <div class="button_div">Malo-les-Bains</div>
                    </a>
-                   <a href="?controller=site&action=register&page=" class="button sub1_button">
+                   <a href="?controller=site&action=register&page=braydunes" class="button sub1_button">
                        <div class="button_div">Bray-Dunes</div>
                    </a>
                </div>
