@@ -56,7 +56,7 @@
                     </div>
                 </div>
             </a>
-            <a href="?controller=site&action=register&page=" class="button">
+            <a href="?controller=site&action=register&page=sorties_en_mer" class="button">
                 <div class="divparent1">
                     <div class="button_div">Sorties en mer</div>
                     <div class="sub1">
@@ -172,7 +172,7 @@
                     </div>
                 </div>
             </a>
-            <a href="?controller=site&action=register&page=" class="button">
+            <a href="?controller=site&action=register&page=services_du_port" class="button">
                 <div class="divparent1">
                     <div class="button_div">Services du port</div>
                     <div class="sub1">
@@ -270,20 +270,23 @@
                     </div>
                 </div>
             </a>
-            <a href="?controller=site&action=register&page=" class="button">
+            <a href="?controller=site&action=register&page=historique" class="button">
                 <div class="divparent1">
                     <div class="button_div">Historique</div>
                     <div class="sub1">
-                        <a href="?controller=site&action=register&page=" class="button sub1_button">
+                        <a href="?controller=site&action=register&page=ephemeride" class="button sub1_button">
                             <div class="button_div">Ephéméride du sauvetage</div>
                         </a>
-                        <a href="?controller=site&action=register&page=" class="button sub1_button">
+                        <a href="?controller=site&action=register&page=societe_humaine" class="button sub1_button">
                             <div class="button_div">40 ans de Société Humaine</div>
                         </a>
-                        <a href="?controller=site&action=register&page=" class="button sub1_button">
+                        <a href="?controller=site&action=register&page=scsn" class="button sub1_button">
                             <div class="button_div">Société Centrale de Sauvetage des Naufragés</div>
                         </a>
-                        <a href="?controller=site&action=register&page=" class="button sub1_button">
+                        <a href="?controller=site&action=register&page=snsm" class="button sub1_button">
+                            <div class="button_div">Société Nationale de Sauvetage en Mer</div>
+                        </a>
+                        <a href="?controller=site&action=register&page=comites_locaux" class="button sub1_button">
                             <div class="button_div">Les comités locaux</div>
                         </a>
                     </div>
@@ -293,22 +296,22 @@
                 <div class="divparent1">
                     <div class="button_div">Compléments</div>
                     <div class="sub1">
-                        <a href="?controller=site&action=register&page=" class="button sub2_button">
+                        <a href="?controller=site&action=register&page=art-et-sauvetage" class="button sub2_button">
                             <div class="button_div">Art et sauvetage</div>
                         </a>
-                        <a href="?controller=site&action=register&page=" class="button sub1_button">
+                        <a href="?controller=site&action=register&page=bibliographie" class="button sub1_button">
                             <div class="button_div">Bibliographie</div>
                         </a>
-                        <a href="?controller=site&action=register&page=" class="button sub1_button">
+                        <a href="?controller=site&action=register&page=decorations-et-recompenses" class="button sub1_button">
                             <div class="button_div">Décorations et récompenses</div>
                         </a>
-                        <a href="?controller=site&action=register&page=" class="button sub1_button">
+                        <a href="?controller=site&action=register&page=description-des-bateaux" class="button sub1_button">
                             <div class="button_div">Description des bateaux</div>
                         </a>
-                        <a href="?controller=site&action=register&page=" class="button sub1_button">
+                        <a href="?controller=site&action=register&page=galerie-photo" class="button sub1_button">
                             <div class="button_div">Galerie photo</div>
                         </a>
-                        <a href="?controller=site&action=register&page=" class="button sub1_button">
+                        <a href="?controller=site&action=register&page=fortunes-de-mer" class="button sub1_button">
                             <div class="button_div">Fortunes de mer</div>
                         </a>
                     </div>
