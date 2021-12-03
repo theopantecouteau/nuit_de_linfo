@@ -4,6 +4,7 @@
 <link rel="stylesheet" type="text/css" href="">
 <h1>Liste des bateaux</h1>
 <?php
+echo "<p>$histoire</p>";
 foreach ($tab_b as $b){
     $bNom = htmlspecialchars($b->get('nom'));
     $bid = rawurlencode($b->get('id'));

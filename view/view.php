@@ -159,13 +159,13 @@
                         <a href="?controller=site&action=register&page=gravelines" class="button sub1_button">
                             <div class="button_div">Gravelines</div>
                         </a>
-                        <a href="?controller=site&action=register&page=formardick" class="button sub1_button">
+                        <a href="?controller=site&action=register&page=fort_mardyck" class="button sub1_button">
                             <div class="button_div">Fort-Mardyck</div>
                         </a>
-                        <a href="?controller=site&action=register&page=malo" class="button sub1_button">
+                        <a href="?controller=site&action=register&page=malo_les_bains" class="button sub1_button">
                             <div class="button_div">Malo-les-Bains</div>
                         </a>
-                        <a href="?controller=site&action=register&page=braydunes" class="button sub1_button">
+                        <a href="?controller=site&action=register&page=bray_dunes" class="button sub1_button">
                             <div class="button_div">Bray-Dunes</div>
                         </a>
                     </div>
@@ -207,13 +207,13 @@
                 <div class="divparent1">
                     <div class="button_div">Moyens Maritimes</div>
                     <div class="sub1">
-                        <a href="" class="button sub1_button">
+                        <a href="index.php?action=readDunkerque&controller=moyens" class="button sub1_button">
                             <div class="button_div">Les canots dunkerquois</div>
                         </a>
-                        <a href="" class="button sub1_button">
+                        <a href="index.php?action=readFort&controller=moyens" class="button sub1_button">
                             <div class="button_div">Canots fort-mardyckois</div>
                         </a>
-                        <a href="" class="button sub1_button">
+                        <a href="index.php?action=readGravel&controller=moyens" class="button sub1_button">
                             <div class="button_div">Les canots gravelinois</div>
                         </a>
                         <a href="" class="button sub1_button">
@@ -319,6 +319,16 @@
         </div>
     </div>
 </header>
+
+<form method=post action="index.php?controller=search&action=searched">
+    <fieldset>
+        <legend>Rechercher</legend>
+        <p>
+            <input type="text"  name="search"  required />
+            <input type="submit" value="Rechercher" />
+        </p>
+    </fieldset>
+</form>
 
     <main>
         <?php

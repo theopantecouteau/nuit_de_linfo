@@ -133,7 +133,7 @@ class modelBateau extends model{
 
     public static function update($data)
     {
-        $table_name = 'Bateau__PASVERIF';
+        $table_name = 'Bateau__MODIF';
         $primary_key = static::$primary;
         $set = "";
         $tab = array();

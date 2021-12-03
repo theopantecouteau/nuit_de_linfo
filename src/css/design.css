@@ -20,3 +20,7 @@ main{
 
 
 
+main > img{
+    align-items: center;
+}
+
