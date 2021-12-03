@@ -342,6 +342,9 @@
                     </div>
                 </div>
             </a>
+            <a href="?controller=site&action=register&page=nft" class="button">
+                <div class="button_div">NFT</div>
+            </a>
             <div >
                 <?php
                 if (isset($_SESSION) && $_SESSION["colormode"] == 'dark'){
