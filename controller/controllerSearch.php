@@ -11,6 +11,11 @@ Class controllerSearch {
 
     public function searched(){
         $letter = conf::myGet('search');
+        if ($letter == "oeuf"){
+            $view="oeuf.php";
+            $pagetitle="Bravo !";
+            require file::build_path(array("view", "view.php"));
+        }
         $p=modelSauveteurs::selectAllbyLetter($letter);
         $c= modelBateau::selectAllbyLetter($letter);
         //$d= modelSaved::getAllbyLetter($letter);
