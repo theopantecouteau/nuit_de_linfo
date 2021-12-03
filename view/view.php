@@ -59,7 +59,7 @@
                 <div class="divparent1">
                     <div class="button_div">Sorties en mer</div>
                     <div class="sub1">
-                        <a href="?controller=site&action=register&page=" class="button sub1_button">
+                        <a href="?controller=site&action=register&page=dix_huit" class="button sub1_button">
                             <div class="button_div">18ème siècle</div>
                         </a>
                         <a href="?controller=site&action=register&page=" class="button sub1_button">
