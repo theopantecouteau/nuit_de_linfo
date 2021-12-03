@@ -15,6 +15,10 @@ require_once file::build_path(array('controller', 'controllerMessage.php'));
 $str = "controller";
 $controller_class = "";
 
+if(!isset($_GET['controller'])){
+    controllerSauveteurs::readAll();
+}
+
 if (!is_null(Conf::myGet('controller'))) {
     $controller = Conf::myGet('controller');
     $controller_class = $str . ucfirst($controller);
