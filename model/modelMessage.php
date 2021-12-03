@@ -4,6 +4,7 @@
 class modelMessage{
 
     private $id;
+    private $pseudo;
     private $message;
     private $image;
 
@@ -35,10 +36,21 @@ class modelMessage{
         $this->image = $im;
     }
 
+    /**
+     * @return mixed
+     */
+    public function getPseudo()
+    {
+        return $this->pseudo;
+    }
+
+
+
     // un constructeur
-    public function __construct($i = NULL, $m = NULL, $im = NULL) {
-        if(!is_null($i) && !is_null($m)){
+    public function __construct($i = NULL,  $p= NULL, $m = NULL, $im = NULL) {
+        if(!is_null($m)){
             $this->id = $i;
+            $this->pseudo = $p;
             $this->message = $m;
             $this->image = $im;
         }
@@ -72,16 +84,14 @@ class modelMessage{
     }
 
     public function save(){
-        $id = $this->getId();
-        $message = $this->getMessage();
-        $image = $this->getImage();
-        $sql = "INSERT INTO voiture (id, message, image) VALUES (:tag1, :tag2, :tag3)";
+        $sql = "INSERT INTO __Messages__ (id, pseudo, message, image) VALUES (:tag1, :tag2, :tag3, :tag4)";
         $req_prep = Model::getPDO()->prepare($sql);
 
         $values = array(
-            "tag1" => $id,
-            "tag2" => $message,
-            "tag3" => $image,
+            "tag1" => $this->id,
+            "tag2" => $this->pseudo,
+            "tag3" => $this->message,
+            "tag4" => $this->image
         );
         $req_prep->execute($values);
     }
