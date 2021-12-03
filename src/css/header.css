@@ -1,11 +1,14 @@
 header{
     width:100%;
     margin: auto;
+    background-color:rgba(255, 255, 255, 1);
+    margin-bottom: 90px;
 }
 
 .sub1{
     display: none;
     position: absolute;
+
 }
 .sub2{
     display: none;
@@ -13,6 +16,7 @@ header{
     left: 100%;
     top: inherit;
     width: 80%;
+
 }
 .divparent1:hover .sub1{
     display: flex;
@@ -55,6 +59,9 @@ header{
     display: flex;
     flex-direction: row;
 }
+.divparent1{
+    background-color:rgba(255, 255, 255, 1);
+}
 
 .sub1_button{
     font-size: 15px;
@@ -69,7 +76,7 @@ header{
 }
 
 #menu div{
-    background: white;
+    background:rgba(255, 255, 255, 1);
 }
 #menu a:hover {
     /*background: gray;*/
@@ -77,4 +84,8 @@ header{
 
 .button_div:hover{
     background: gray;
+}
+
+.transp{
+
 }

@@ -6,7 +6,8 @@ require_once file::build_path(array("controller", "controllerUser.php"));
 require_once file::build_path(array("controller", "controllerStations.php"));
 require_once file::build_path(array("controller", "controllerBateau.php"));
 require_once file::build_path(array("controller", "controllerSaved.php"));
-require_once file::build_path(array("controller", "controllerSortie.php"));
+require_once file::build_path(array("controller", "controllerSearch.php"));
+require_once file::build_path(array('controller', 'controllerMoyens.php'));
 
 // require de tous les Controllers
 $str = "controller";
