@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <link href="src/css/designDark.css" rel="stylesheet">
     <link href="src/css/headerDark.css" rel="stylesheet">
+    <link href="src/css/search.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
 </head>
@@ -319,18 +320,22 @@
         </div>
     </div>
 </header>
+    <div id="searchDiv">
+        <form method=post id="searchForm" action="index.php?controller=search&action=searched">
+            <fieldset id="searchBar">
+                <legend>Rechercher</legend>
+                <p>
+                    <input type="text"  name="search"  required />
+                    <input type="submit" value="Rechercher" />
+                </p>
+            </fieldset>
+        </form>
+    </div>
 
-<form method=post action="index.php?controller=search&action=searched">
-    <fieldset>
-        <legend>Rechercher</legend>
-        <p>
-            <input type="text"  name="search"  required />
-            <input type="submit" value="Rechercher" />
-        </p>
-    </fieldset>
-</form>
+
 
     <main>
+
         <?php
         require_once __DIR__ . DIRECTORY_SEPARATOR . ".." . DIRECTORY_SEPARATOR . "lib" . DIRECTORY_SEPARATOR . "file.php";
         $filepath = file::build_path(array("view", static::$object, "$view"));
