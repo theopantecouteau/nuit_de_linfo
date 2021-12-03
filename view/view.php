@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <?php
-    if ($_SESSION['colormode'] == 'dark'){
+    if (isset($_SESSION) && $_SESSION['colormode'] == 'dark'){
         echo '<link href="src/css/designDark.css" rel="stylesheet">';
         echo '<link href="src/css/headerDark.css" rel="stylesheet">';
         echo '<link href="src/css/searchDark.css" rel="stylesheet">';
@@ -334,7 +334,7 @@
             </a>
             <div >
                 <?php
-                if ($_SESSION["colormode"] == 'dark'){
+                if (isset($_SESSION) && $_SESSION["colormode"] == 'dark'){
                     echo '<a href="?controller=site&action=setLight"><img style="width: 30px; height: auto;" src="https://icones.pro/wp-content/uploads/2021/04/icone-de-soleil-noir.png"></a>';
                 } else {
                     echo '<a href="?controller=site&action=setDark"><img style="width: 30px; height: auto;" src="https://svgsilh.com/svg/307307.svg"></a>';
@@ -394,12 +394,12 @@
 
         </div>
         <div id="boxliste2">
-            <h2>Nous contacter</h2>
+            <h2 >Nous contacter</h2>
             <div class="sousliste">
-                <a> Facebook </a>
+                <a href="https://youtu.be/T8l2dDtUk4U"> Facebook </a>
             </div>
             <div class="sousliste">
-                <a>Twiter </a>
+                <a href="https://youtu.be/T8l2dDtUk4U"> Twiter </a>
             </div>
             <div class="sousliste">
                 <a href="mailto:truc@gmail.com"> Mail </a>
