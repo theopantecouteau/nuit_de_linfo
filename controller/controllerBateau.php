@@ -59,6 +59,7 @@ class controllerBateau
         $bVitesse = '';
         $bMoteurs = '';
         $bTirant = '';
+        $bIdMoyen = '';
         $view = 'update.php';
         $pagetitle = 'Création d\'un bateau';
         require file::build_path(array('view','view.php'));
@@ -66,11 +67,11 @@ class controllerBateau
     public static function created(){
         $b1 = new modelBateau($_POST['idBateau'],$_POST['nomBateau'], $_POST['constructeur'],$_POST['datecommande'],$_POST['dimensions'],
         $_POST['histoire'], $_POST['typebateau'], $_POST['finService'], '', '', $_POST['nomdonnedate']
-        ,$_POST['numcoque'], $_POST['poids'], $_POST['vitesse'], $_POST['moteurs'], $_POST['tirantdeau']);
+        ,$_POST['numcoque'], $_POST['poids'], $_POST['vitesse'], $_POST['moteurs'], $_POST['tirantdeau'], $_POST['idMoyen']);
         $data = ['id'=>$_POST['idBateau'],'nom'=>$_POST['nomBateau'], 'constructeur' =>$_POST['constructeur'], 'datecommande'=>$_POST['datecommande'],
             'dimensions'=>$_POST['dimensions'], 'histoire'=> $_POST['histoire'], 'typebateau'=>$_POST['typebateau'], 'finService'=>$_POST['finService'],
             'lienimageplan'=> ' ', 'lienimagehistorique'=>'','numcoque'=>$_POST['numcoque'], 'poids'=>$_POST['poids'], 'vitesse'=>$_POST['vitesse'],'moteurs'=> $_POST['moteurs']
-            , 'tailletirandeau'=>$_POST['tirantdeau'], 'nomdonnedate'=> $_POST['nomdonnedate']];
+            , 'tailletirandeau'=>$_POST['tirantdeau'], 'nomdonnedate'=> $_POST['nomdonnedate'], 'idMoyen'=>$_POST['idMoyen']];
         $b1->save($data);
         $tab_b = modelBateau::selectAll();
         $view = 'created.php';
@@ -95,6 +96,7 @@ class controllerBateau
         $bVitesse = $b1->get('vitesse');
         $bMoteurs = $b1->get('moteurs');
         $bTirant = $b1->get('tirantDeau');
+        $bIdMoyen = $b1->get('idMoyen');
         //récup des attributs du bateau que l'on veut modifier.
         $view = 'update.php';
         $pagetitle = 'Modification d\'un bateau';
@@ -104,7 +106,7 @@ class controllerBateau
         $data = ['id'=>$_POST['idBateau'],'nom'=>$_POST['nomBateau'], 'constructeur' =>$_POST['constructeur'], 'datecommande'=>$_POST['datecommande'],
             'dimensions'=>$_POST['dimensions'], 'histoire'=> $_POST['histoire'], 'typebateau'=>$_POST['typebateau'], 'finService'=>$_POST['finService'],
             'numcoque'=>$_POST['numcoque'], 'poids'=>$_POST['poids'], 'vitesse'=>$_POST['vitesse'],'moteurs'=> $_POST['moteurs']
-            , 'tailletirandeau'=>$_POST['tirantdeau'], 'nomdonnedate'=> $_POST['nomdonnedate']];
+            , 'tailletirandeau'=>$_POST['tirantdeau'], 'nomdonnedate'=> $_POST['nomdonnedate'], 'idMoyen' => $_POST['idMoyen']];
         modelBateau::update($data);
         $tab_p = ModelProduit::selectAll();
         $view = 'updated.php';

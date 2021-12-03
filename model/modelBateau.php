@@ -18,6 +18,7 @@ class modelBateau extends model{
     private $vitesse;
     private $moteurs;
     private $tirantDeau;
+    private $idMoyen;
     protected static $object = 'bateau';
     protected static $primary = 'id';
     protected static $table = 'Bateau__PASVERIF';
@@ -37,10 +38,10 @@ class modelBateau extends model{
 
     public function __construct($idBateau = NULL, $constructeur = NULL,$nomBateau = NULL, $datecommande = NULL, $dimensions = NULL, $histoire = NULL, $typeBateau = NULL,
                                 $finService = NULL, $lienImagePlan = NULL, $lienimageHistorique = NULL, $nomdonnedate = NULL, $numCoque = NULL, $poids = NULL, $vitesse = NULL,
-                                $moteurs = NULL, $tirantDeau = NULL){
+                                $moteurs = NULL, $tirantDeau = NULL, $idMoyen = NULL){
         if(!is_null($idBateau) && !is_null($nomBateau) && !is_null($constructeur) &&!is_null($datecommande) && !is_null($dimensions) && !is_null($histoire) && !is_null($typeBateau)
         && !is_null($finService) && !is_null($lienImagePlan) && !is_null($lienimageHistorique) && !is_null($nomdonnedate) && !is_null($numCoque) && !is_null($poids)
-        && !is_null($vitesse) && !is_null($moteurs) && !is_null($tirantDeau)){
+        && !is_null($vitesse) && !is_null($moteurs) && !is_null($tirantDeau) && !is_null($idMoyen)){
             $this->idBateau = $idBateau;
             $this->nomBateau = $nomBateau;
             $this->constructeur = $constructeur;
@@ -57,11 +58,12 @@ class modelBateau extends model{
             $this->vitesse = $vitesse;
             $this->moteurs = $moteurs;
             $this->tirantDeau = $tirantDeau;
+            $this->idMoyen = $idMoyen;
         }
     }
     public static function selectAll()
     {
-        $table_name = static::$table;
+        $table_name = 'Bateau__VERIF';
         $class_name = 'modelBateau';
         try {
             $rep = model::getPDO()->query("SELECT * FROM $table_name");
