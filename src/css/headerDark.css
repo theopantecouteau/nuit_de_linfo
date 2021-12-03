@@ -1,11 +1,14 @@
 header{
     width:100%;
     margin: auto;
-    background-color:rgba(255, 255, 255, 1);
+    background-color:rgba(48, 48, 48, 1);
     margin-bottom: 90px;
 }
+header div{
+    background-color:rgba(48, 48, 48, 1);
+    color: white;
+}
 
-header
 
 .sub1{
     display: none;
@@ -41,15 +44,10 @@ header
     align-items: center;
     justify-content: space-between;
     margin: auto;
-    background-color:rgba(255, 255, 255, 1);
-}
-
-#headbar{
-    background-color:rgba(255, 255, 255, 1);
 }
 
 .button{
-    color: black;
+    color: white;
     text-decoration: none;
 }
 
@@ -83,7 +81,7 @@ header
 }
 
 #menu div{
-    background:rgba(255, 255, 255, 1);
+    background:rgba(48 , 48, 48, 1);
 }
 #menu a:hover {
     /*background: gray;*/

@@ -18,11 +18,16 @@ if (!is_null(Conf::myGet('controller'))) {
     $controller_class = $str . ucfirst($controller);
 
 }
+else{
+    header('Location : index.php?controller=sauveteurs&action=acteurs');
+}
 
 $methode = get_class_methods($controller_class);
 
-
-if (class_exists($controller_class)) {
+if (isset($_GET['page'])){
+    controllerSite::redirect($_GET['page']);
+}
+else if (class_exists($controller_class)) {
     if (!is_null(Conf::myGet('action'))) {
         $action = Conf::myGet('action');
         if (!in_array($action, $methode)) {
